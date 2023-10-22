@@ -19,4 +19,7 @@ Route::get('/', function () {
 Route::get('/landingpage', function () {
     return view('landingpage');
 });
+Route::get('/batikshop', function () {
+    return view('batikShop');
+});
 
