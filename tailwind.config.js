@@ -12,10 +12,10 @@ module.exports = {
         'cream': '#FAF1E4',
         'green': {
           darkest: '#373F27',
-          dark: '#a5f3fc',
-          medium: '#67e8f9',
-          light: '#22d3ee',
-          pastel: '#06b6d4',
+          dark: '#415230',
+          medium: '#636B46',
+          light: '#9EB485',
+          pastel: '#CEDEBD',
         },
       },
       fontFamily: {

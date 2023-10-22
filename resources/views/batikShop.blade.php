@@ -6,7 +6,7 @@
   @vite('resources/css/app.css')
 </head>
 <body>
-<div class="relative bg-cream font-Raleway">
+<div class="relative bg-green-pastel font-Raleway">
         <div class="container m-auto px-6 pt-32 md:px-12 lg:pt-[4.8rem] lg:px-7">
             <div class="flex items-center flex-wrap px-2 md:px-0">
                 <div class="relative lg:w-6/12 lg:py-24 xl:py-32">
