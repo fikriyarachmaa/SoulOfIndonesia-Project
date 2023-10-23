@@ -22,4 +22,13 @@ Route::get('/landingpage', function () {
 Route::get('/batikshop', function () {
     return view('batikShop');
 });
+Route::get('/components/header', function () {
+    return view('components/header');
+});
+Route::get('/components/footer', function () {
+    return view('components/footer');
+});
+Route::get('/galeribatik', function () {
+    return view('galeriBatik');
+});
 
