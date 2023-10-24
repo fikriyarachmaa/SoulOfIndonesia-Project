@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="/img/logo.png" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="" target="_blank"><img src="/public/img/logo.png" width="400" alt="SOI Logo"></a></p>
 
 
 ## About Soul of Indonesia
