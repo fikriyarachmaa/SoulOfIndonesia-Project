@@ -1,4 +1,4 @@
-<p align="center"><a href="" target="_blank"><img src="/public/img/logo.png" width="400" alt="SOI Logo"></a></p>
+<p align="center"><a href="" target="_blank"><img src="/public/img/kain.png" width="400" alt="SOI Logo"></a></p>
 
 
 ## About Soul of Indonesia
