@@ -44,7 +44,7 @@
                 <input class="pl-2 w-full outline-none border-none" type="password" name="password" id="password" placeholder="Tulis Disini..." />
                 
               </div>
-              <button type="submit" class="block w-full bg-cream mt-5 py-3 px-2 rounded-2xl hover:bg-yellow-700 hover:-translate-y-1 transition-all duration-500 text-green-dark font-semibold mb-2">Masuk</button>
+              <button type="submit" class="block w-full bg-cream mt-5 py-3 px-2 rounded-2xl hover:bg-yellow  hover:-translate-y-1 transition-all duration-500 text-green-dark font-semibold mb-2">Masuk</button>
 
               <div class="flex justify-between mt-4">
                 <span class="text-green-dark text-sm ml-2 hover:text-blue-500 cursor-pointer hover:-translate-y-1 duration-500 transition-all">Lupa Kata Sandi?</span>
