@@ -36,10 +36,10 @@
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                 <h2 class="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Kategori Produk</h2>
                 <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <category class="max-w-xs">
-              <a href="#">
+            <category class="max-w-xs">
+                <a href="#">
                   <img src="/img/kain.png" class="mb-5 rounded-lg" alt="Image 1">
-              </a>
+                </a>
           </category>
           <category class="max-w-xs">
               <a href="#">
@@ -64,29 +64,197 @@
   <!-- produk -->
   <section class="my-10 font-Raleway">
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <h2 class="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Kategori Produk</h2>
-            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <h2 class="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Produk Untukmu</h2>
+            <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-5">
                 
             <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img class="p-8 rounded-t-lg" src="/img/batiksolo.jpg" alt="product image" />
-    </a>
-    <div class="px-5 pb-5">
-        <a href="#">
-            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
-        </a>
-        <p>Kota Pengiriman : Solo</p>
-        <div class="flex items-center justify-between">
-            <span class="text-3xl font-bold text-gray-900 dark:text-white">Rp 110.000</span>
-            <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        </div>
-    </div>
-</div>
+                <a href="#">
+                    <img class="p-5 rounded-t-lg" src="/img/batiksolo.png" alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <a href="#">
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
+                    </a>
+                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
+                <div class="flex items-center justify-end">
+                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
+                </div>
+                    <div class="py-2">
+                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
+                    </div>
+                </div>
+            </div>
 
+            <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="p-5 rounded-t-lg" src="/img/batiksolo.png" alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <a href="#">
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
+                    </a>
+                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
+                <div class="flex items-center justify-end">
+                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
+                </div>
+                    <div class="py-2">
+                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
+                    </div>
+                </div>
+            </div>
+
+           <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="p-5 rounded-t-lg" src="/img/batiksolo.png" alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <a href="#">
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
+                    </a>
+                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
+                <div class="flex items-center justify-end">
+                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
+                </div>
+                    <div class="py-2">
+                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="p-5 rounded-t-lg" src="/img/batiksolo.png" alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <a href="#">
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
+                    </a>
+                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
+                <div class="flex items-center justify-end">
+                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
+                </div>
+                    <div class="py-2">
+                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="p-5 rounded-t-lg" src="/img/batiksolo.png" alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <a href="#">
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
+                    </a>
+                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
+                <div class="flex items-center justify-end">
+                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
+                </div>
+                    <div class="py-2">
+                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
+                    </div>
+                </div>
+            </div>
         
-        </div>
+            <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="p-5 rounded-t-lg" src="/img/batiksolo.png" alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <a href="#">
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
+                    </a>
+                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
+                <div class="flex items-center justify-end">
+                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
+                </div>
+                    <div class="py-2">
+                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="p-5 rounded-t-lg" src="/img/batiksolo.png" alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <a href="#">
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
+                    </a>
+                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
+                <div class="flex items-center justify-end">
+                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
+                </div>
+                    <div class="py-2">
+                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
+                    </div>
+                </div>
+            </div>
+
+           <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="p-5 rounded-t-lg" src="/img/batiksolo.png" alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <a href="#">
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
+                    </a>
+                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
+                <div class="flex items-center justify-end">
+                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
+                </div>
+                    <div class="py-2">
+                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="p-5 rounded-t-lg" src="/img/batiksolo.png" alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <a href="#">
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
+                    </a>
+                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
+                <div class="flex items-center justify-end">
+                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
+                </div>
+                    <div class="py-2">
+                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="p-5 rounded-t-lg" src="/img/batiksolo.png" alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <a href="#">
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
+                    </a>
+                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
+                <div class="flex items-center justify-end">
+                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
+                </div>
+                    <div class="py-2">
+                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="flex justify-center py-10">
+                <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Lihat Lainnya</button>
+        </div>        
   </section>
   <!-- produk -->
+
+  
   @include('components.footer')
 </body>
 </html>

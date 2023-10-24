@@ -31,4 +31,8 @@ Route::get('/components/footer', function () {
 Route::get('/galeribatik', function () {
     return view('galeriBatik');
 });
+Route::get('/login', function () {
+    return view('login');
+});
+
 
