@@ -33,16 +33,19 @@
                 <h3 class="font-semibold text-xl text-green-darkest mb-5">TAUTAN</h3>
                 <ul class="text-green-darkest">
                     <li>
-                        <a href="#beranda" class="inline-block text-base hover:text-yellow mb-3">Beranda</a>
+                        <a href="/landingpage" class="inline-block text-base hover:text-yellow mb-3">Beranda</a>
                     </li>
                     <li>
-                        <a href="#galeri" class="inline-block text-base hover:text-yellow mb-3">Galeri Batik</a>
+                        <a href="/galeribatik" class="inline-block text-base hover:text-yellow mb-3">Galeri Batik</a>
                     </li>
                     <li>
-                        <a href="#rekomendasi" class="inline-block text-base hover:text-yellow mb-3">Rekomendasi Wisata</a>
+                        <a href="/rekomendasiwisata" class="inline-block text-base hover:text-yellow mb-3">Rekomendasi Wisata</a>
                     </li>
                     <li>
-                        <a href="#batikshop" class="inline-block text-base hover:text-yellow mb-3">Batik Shop</a>
+                        <a href="/batikshop" class="inline-block text-base hover:text-yellow mb-3">Batik Shop</a>
+                    </li>
+                    <li>
+                        <a href="/profil" class="inline-block text-base hover:text-yellow mb-3">Profile</a>
                     </li>
                 </ul>
             </div>

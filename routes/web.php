@@ -37,5 +37,12 @@ Route::get('/login', function () {
 Route::get('/regis', function () {
     return view('regis');
 });
+Route::get('/rekomendasiwisata', function () {
+    return view('rekomendasiWisata');
+});
+Route::get('/profil', function () {
+    return view('profil');
+});
+
 
 
