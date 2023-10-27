@@ -20,7 +20,7 @@ Route::get('/landingpage', function () {
     return view('landingpage');
 });
 Route::get('/batikshop/batikshop', function () {
-    return view('batikShop');
+    return view('batikshop/batikShop');
 });
 Route::get('/components/header', function () {
     return view('components/header');
@@ -29,17 +29,17 @@ Route::get('/components/footer', function () {
     return view('components/footer');
 });
 Route::get('galeribatik/galeribatik', function () {
-    return view('galeriBatik');
+    return view('galeribatik/galeriBatik');
 });
 Route::get('/auth/login', function () {
-    return view('login');
+    return view('auth/login');
 });
 Route::get('/auth/regis', function () {
-    return view('regis');
+    return view('auth/regis');
 });
 Route::get('/admin/admin', function () {
-    return view('admin');
+    return view('admin/admin');
 });
 Route::get('/rekom/rekomwisata', function () {
-    return view('rekomendasiWisata');
+    return view('rekom/rekomendasiWisata');
 });
