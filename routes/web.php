@@ -37,5 +37,7 @@ Route::get('/login', function () {
 Route::get('/regis', function () {
     return view('regis');
 });
-
+Route::get('/admin', function () {
+    return view('admin');
+});
 
