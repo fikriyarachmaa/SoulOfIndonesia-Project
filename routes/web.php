@@ -19,7 +19,7 @@ Route::get('/', function () {
 Route::get('/landingpage', function () {
     return view('landingpage');
 });
-Route::get('/batikshop', function () {
+Route::get('/batikshop/batikshop', function () {
     return view('batikShop');
 });
 Route::get('/components/header', function () {
@@ -28,15 +28,18 @@ Route::get('/components/header', function () {
 Route::get('/components/footer', function () {
     return view('components/footer');
 });
-Route::get('/galeribatik', function () {
+Route::get('galeribatik/galeribatik', function () {
     return view('galeriBatik');
 });
-Route::get('/login', function () {
+Route::get('/auth/login', function () {
     return view('login');
 });
-Route::get('/regis', function () {
+Route::get('/auth/regis', function () {
     return view('regis');
 });
-Route::get('/admin', function () {
+Route::get('/admin/admin', function () {
     return view('admin');
+});
+Route::get('/rekom/rekomwisata', function () {
+    return view('rekomendasiWisata');
 });
