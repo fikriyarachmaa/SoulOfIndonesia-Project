@@ -39,5 +39,3 @@ Route::get('/regis', function () {
 });
 Route::get('/admin', function () {
     return view('admin');
-});
-

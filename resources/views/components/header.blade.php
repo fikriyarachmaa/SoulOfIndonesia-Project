@@ -25,19 +25,19 @@
                 <nav id="nav-menu" class="hidden absolute py-5 bg-green-light shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                     <ul class="block lg:flex">
                         <li class="group">
-                            <a href="#home" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Beranda</a>
+                            <a href="/landingpage" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Beranda</a>
                         </li>
                         <li class="group">
-                            <a href="#galeriBatik" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Galeri Batik</a>
+                            <a href="/galeribatik" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Galeri Batik</a>
                         </li>
                         <li class="group">
-                            <a href="#rekomendasi" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Rekomendasi Wisata</a>
+                            <a href="/rekomendasiwisata" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Rekomendasi Wisata</a>
                         </li>
                         <li class="group">
-                            <a href="#batikShop" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Batik Shop</a>
+                            <a href="/batikshop" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Batik Shop</a>
                         </li>
                         <li class="group">
-                            <a href="#profile" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Profile</a>
+                            <a href="/profil" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Profile</a>
                         </li>
                     </ul>
                 </nav>

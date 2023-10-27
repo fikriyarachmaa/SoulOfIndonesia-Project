@@ -33,16 +33,19 @@
                 <h3 class="font-semibold text-xl text-green-darkest mb-5">TAUTAN</h3>
                 <ul class="text-green-darkest">
                     <li>
-                        <a href="#beranda" class="inline-block text-base hover:text-yellow mb-3">Beranda</a>
+                        <a href="/landingpage" class="inline-block text-base hover:text-yellow mb-3">Beranda</a>
                     </li>
                     <li>
-                        <a href="#galeri" class="inline-block text-base hover:text-yellow mb-3">Galeri Batik</a>
+                        <a href="/galeribatik" class="inline-block text-base hover:text-yellow mb-3">Galeri Batik</a>
                     </li>
                     <li>
-                        <a href="#rekomendasi" class="inline-block text-base hover:text-yellow mb-3">Rekomendasi Wisata</a>
+                        <a href="/rekomendasiwisata" class="inline-block text-base hover:text-yellow mb-3">Rekomendasi Wisata</a>
                     </li>
                     <li>
-                        <a href="#batikshop" class="inline-block text-base hover:text-yellow mb-3">Batik Shop</a>
+                        <a href="/batikshop" class="inline-block text-base hover:text-yellow mb-3">Batik Shop</a>
+                    </li>
+                    <li>
+                        <a href="/profil" class="inline-block text-base hover:text-yellow mb-3">Profile</a>
                     </li>
                 </ul>
             </div>
@@ -51,17 +54,18 @@
                 <form>
                     <div class="w-full px-4 mb-4">
                         <label for="name" class="text-base text-green-darkest font-bold">Nama</label>
-                        <input type="text" id="name" class="w-full bg-cream text-dark-green-darkest p-3 rounded-md focus:outline-none focus:ring-green-darkest focus:ring-1 focus:border-green-darkest"/>
+                        <input type="text" id="name" name="name" class="w-full bg-cream text-dark-green-darkest p-3 rounded-md focus:outline-none focus:ring-green-darkest focus:ring-1 focus:border-green-darkest"/>
                     </div>
                     <div class="w-full px-4 mb-4">
-                        <label for="name" class="text-base text-green-darkest font-bold">Ulasan</label>
-                        <input type="text" id="ulasan" class="w-full bg-cream text-dark-green-darkest p-3 rounded-md focus:outline-none focus:ring-green-darkest focus:ring-1 focus:border-green-darkest"/>
+                        <label for="ulasan" class="text-base text-green-darkest font-bold">Ulasan</label>
+                        <input type="text" id="ulasan" name="ulasan" class="w-full bg-cream text-dark-green-darkest p-3 rounded-md focus:outline-none focus:ring-green-darkest focus:ring-1 focus:border-green-darkest"/>
                     </div>
                     <div class="w-full px-4 flex items-center justify-center">
-                        <button class="text-base font-semibold text-cream bg-green-darkest py-2 px-8 rounded-lg">Kirim</button>
+                        <button type="submit" class="text-base font-semibold text-cream bg-green-darkest py-2 px-8 rounded-lg">Kirim</button>
                     </div>
                 </form>
             </div>
+            
             </div>
             
             <div class="w-full pt-10 border-t border-green-medium text-green-darkest mx-auto">
