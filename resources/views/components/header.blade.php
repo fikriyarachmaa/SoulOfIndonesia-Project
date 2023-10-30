@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>header</title>
     @vite('resources/css/app.css')
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="container mx-auto">
         <div class="flex items-center justify-between relative">
             <div class="px-4">
-                <a href="#home"><img src="/img/logo.png" alt="SoulOfIndonesia" class="py-2 w-[60px] h-[60px]"></a>
+                <a href="#home"><img src="/img/logo.png" alt="SoulOfIndonesia" class="py-0 w-[60px] h-[60px]"></a>
             </div>
             <div class="flex items-center px-4">
                 <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">

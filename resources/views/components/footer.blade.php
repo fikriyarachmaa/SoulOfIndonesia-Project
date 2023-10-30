@@ -13,7 +13,7 @@
         <div class="container mx-auto">
             <div class="w-full px-4 py-4 flex items-center justify-center">
                 <div class="max-w-xl mx-auto text-center text-green-darkest">
-                    <a href=""><img src="/img/logo.png" alt="SoulOfIndonesia" class="py-2 w-[60px] h-[60px] mx-auto"></a>
+                    <a href=""><img src="/img/logo.png" alt="SoulOfIndonesia" class="py-0 w-[60px] h-[60px] mx-auto"></a>
                     <p class="font-medium">Get to know about Batik Nusantara</p>
                     <p class="font-medium">Pantau perkembangan dan informasi penting seputar SoulOfIndonesia</p>
                 </div>
@@ -50,18 +50,18 @@
                 </ul>
             </div>
             <div class="w-full px-4 mb-12 text-green-darkest font medium md:w-1/3">
-                <h3 class="font-semibold text-xl px-4 mb-5">ULASAN</h3>
+                <h3 class="font-semibold text-xl mb-5">ULASAN</h3>
                 <form>
-                    <div class="w-full px-4 mb-4">
+                    <div class="w-full mb-4">
                         <label for="name" class="text-base text-green-darkest font-bold">Nama</label>
                         <input type="text" id="name" name="name" class="w-full bg-cream text-dark-green-darkest p-3 rounded-md focus:outline-none focus:ring-green-darkest focus:ring-1 focus:border-green-darkest"/>
                     </div>
-                    <div class="w-full px-4 mb-4">
+                    <div class="w-full mb-4">
                         <label for="ulasan" class="text-base text-green-darkest font-bold">Ulasan</label>
                         <input type="text" id="ulasan" name="ulasan" class="w-full bg-cream text-dark-green-darkest p-3 rounded-md focus:outline-none focus:ring-green-darkest focus:ring-1 focus:border-green-darkest"/>
                     </div>
                     <div class="w-full px-4 flex items-center justify-center">
-                        <button type="submit" class="text-base font-semibold text-cream bg-green-darkest py-2 px-8 rounded-lg">Kirim</button>
+                        <button type="submit" class="text-base font-semibold text-cream bg-green-darkest py-2 px-8 rounded-lg hover:bg-yell">Kirim</button>
                     </div>
                 </form>
             </div>
