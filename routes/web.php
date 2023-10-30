@@ -19,8 +19,8 @@ Route::get('/', function () {
 Route::get('/landingpage', function () {
     return view('landingpage');
 });
-Route::get('/batikshop', function () {
-    return view('batikShop');
+Route::get('/batikshop/batikshop', function () {
+    return view('batikshop/batikShop');
 });
 Route::get('/components/header', function () {
     return view('components/header');
@@ -28,21 +28,18 @@ Route::get('/components/header', function () {
 Route::get('/components/footer', function () {
     return view('components/footer');
 });
-Route::get('/galeribatik', function () {
-    return view('galeriBatik');
+Route::get('galeribatik/galeribatik', function () {
+    return view('galeribatik/galeriBatik');
 });
-Route::get('/login', function () {
-    return view('login');
+Route::get('/auth/login', function () {
+    return view('auth/login');
 });
-Route::get('/regis', function () {
-    return view('regis');
+Route::get('/auth/regis', function () {
+    return view('auth/regis');
 });
-Route::get('/rekomendasiwisata', function () {
-    return view('rekomendasiWisata');
+Route::get('/admin/admin', function () {
+    return view('admin/admin');
 });
-Route::get('/profil', function () {
-    return view('profil');
+Route::get('/rekom/rekomwisata', function () {
+    return view('rekom/rekomendasiWisata');
 });
-
-
-
