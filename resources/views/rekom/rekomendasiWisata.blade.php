@@ -22,7 +22,7 @@
                 <div class="w-full lg:w-1/2 px-4">
                     <h2 class="text-yellow font-semibold text-xl md:text-2xl lg:text-3xl mb-4">Kampung Batik Kauman, Solo</h2>
                     <p class="text-green-darkest font-regular pb-8 md:pb-10 text-justify">Kampung Batik Kauman adalah salah satu kawasan yang terkenal sebagai pusat produksi dan pengembangan batik di Solo, yang merupakan salah satu pusat batik tradisional terkemuka di Indonesia.</p>
-                    <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                    <a href="/rekom/kampungkauman" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@
                             <h3 class="text-medium font-semibold text-yellow mb-2 truncate hover:text-green-darkest text-center">Kampung Batik Giriloyo</h3>
                             <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Yogyakarta</h3>
                             <div class="text-center">
-                                <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                <a href="/rekom/kampungkauman" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                             <h3 class="text-medium font-semibold text-yellow mb-2 truncate hover:text-green-darkest text-center">Semarang Batik Village</h3>
                             <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Semarang</h3>
                             <div class="text-center">
-                                <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                <a href="/rekom/kampungkauman" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                             <h3 class="text-medium font-semibold text-yellow mb-2 truncate hover:text-green-darkest text-center">Rumah Batik Palbatu</h3>
                             <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Jakarta</h3>
                             <div class="text-center">
-                                <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                <a href="/rekom/kampungkauman" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                             <h3 class="text-medium font-semibold text-yellow mb-2 truncate hover:text-green-darkest text-center">Kampung Batik Laweyan</h3>
                             <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Solo</h3>
                             <div class="text-center">
-                                <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                <a href="/rekom/kampungkauman" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                             <h3 class="text-medium font-semibold text-yellow mb-2 truncate hover:text-green-darkest text-center">Kampung Batik Trusmi</h3>
                             <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Cirebon</h3>
                             <div class="text-center">
-                                <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                <a href="/rekom/kampungkauman" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                             <h3 class="text-medium font-semibold text-yellow mb-2 truncate hover:text-green-darkest text-center">Kampung Batik Lasem</h3>
                             <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Rembang</h3>
                             <div class="text-center">
-                                <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                <a href="/rekom/kampungkauman" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                             </div>
                         </div>
                     </div>

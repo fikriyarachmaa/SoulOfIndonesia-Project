@@ -28,7 +28,7 @@ Route::get('/components/header', function () {
 Route::get('/components/footer', function () {
     return view('components/footer');
 });
-Route::get('galeribatik/galeribatik', function () {
+Route::get('/galeribatik/galeribatik', function () {
     return view('galeribatik/galeriBatik');
 });
 Route::get('/auth/login', function () {
@@ -42,4 +42,10 @@ Route::get('/admin/admin', function () {
 });
 Route::get('/rekom/rekomwisata', function () {
     return view('rekom/rekomendasiWisata');
+});
+Route::get('/galeribatik/batikjamugendong', function () {
+    return view('galeribatik/batikjamugendong');
+});
+Route::get('/rekom/kampungkauman', function () {
+    return view('rekom/kampungkauman');
 });

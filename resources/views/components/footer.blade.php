@@ -36,13 +36,13 @@
                         <a href="/landingpage" class="inline-block text-base hover:text-yellow mb-3">Beranda</a>
                     </li>
                     <li>
-                        <a href="/galeribatik" class="inline-block text-base hover:text-yellow mb-3">Galeri Batik</a>
+                        <a href="/galeribatik/galeribatik" class="inline-block text-base hover:text-yellow mb-3">Galeri Batik</a>
                     </li>
                     <li>
-                        <a href="/rekomendasiwisata" class="inline-block text-base hover:text-yellow mb-3">Rekomendasi Wisata</a>
+                        <a href="/rekom/rekomwisata" class="inline-block text-base hover:text-yellow mb-3">Rekomendasi Wisata</a>
                     </li>
                     <li>
-                        <a href="/batikshop" class="inline-block text-base hover:text-yellow mb-3">Batik Shop</a>
+                        <a href="/batikshop/batikshop" class="inline-block text-base hover:text-yellow mb-3">Batik Shop</a>
                     </li>
                     <li>
                         <a href="/profil" class="inline-block text-base hover:text-yellow mb-3">Profile</a>

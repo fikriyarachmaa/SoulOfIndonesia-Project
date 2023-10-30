@@ -22,7 +22,7 @@
                 <div class="w-full lg:w-1/2 px-4">
                     <h2 class="text-yellow font-semibold text-xl md:text-2xl lg:text-3xl mb-4">Batik Jamu Gendong Motif Tejo</h2>
                     <p class="text-green-darkest font-regular pb-8 md:pb-10 text-justify">Batik Jamu Gendong atau Batik Mbok Jamu adalah salah satu motif batik tradisional Indonesia yang menggambarkan seorang wanita yang membawa keranjang atau gendongan berisi ramuan jamu tradisional.</p>
-                    <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                    <a href="/galeribatik/batikjamugendong" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@
                         <div class="py-8 px-6">
                             <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Batik Mega Mendung</h3>
                             <div class="text-center">
-                                <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                <a href="/galeribatik/batikjamugendong" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                         <div class="py-8 px-6">
                             <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Batik Parang</h3>
                             <div class="text-center">
-                                <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                <a href="/galeribatik/batikjamugendong" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                         <div class="py-8 px-6">
                             <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Batik Kawung</h3>
                             <div class="text-center">
-                                <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                <a href="/galeribatik/batikjamugendong" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                         <div class="py-8 px-6">
                             <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Batik Banten</h3>
                             <div class="text-center">
-                                <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                <a href="/galeribatik/batikjamugendong" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                         <div class="py-8 px-6">
                             <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Batik Kalimantan</h3>
                             <div class="text-center">
-                                <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                <a href="/galeribatik/batikjamugendong" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                         <div class="py-8 px-6">
                             <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Batik Padang</h3>
                             <div class="text-center">
-                                <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                <a href="/galeribatik/batikjamugendong" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -116,7 +116,7 @@
                         <div class="py-8 px-6">
                             <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Batik Medan</h3>
                             <div class="text-center">
-                                <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                <a href="/galeribatik/batikjamugendong" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                         <div class="py-8 px-6">
                             <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Batik Sekar Jagad</h3>
                             <div class="text-center">
-                                <a href="" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                <a href="/galeribatik/batikjamugendong" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                             </div>
                         </div>
                     </div>

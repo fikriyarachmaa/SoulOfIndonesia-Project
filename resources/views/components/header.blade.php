@@ -28,13 +28,13 @@
                             <a href="/landingpage" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Beranda</a>
                         </li>
                         <li class="group">
-                            <a href="/galeribatik" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Galeri Batik</a>
+                            <a href="/galeribatik/galeribatik" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Galeri Batik</a>
                         </li>
                         <li class="group">
-                            <a href="/rekomendasiwisata" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Rekomendasi Wisata</a>
+                            <a href="/rekom/rekomwisata" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Rekomendasi Wisata</a>
                         </li>
                         <li class="group">
-                            <a href="/batikshop" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Batik Shop</a>
+                            <a href="/batikshop/batikshop" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Batik Shop</a>
                         </li>
                         <li class="group">
                             <a href="/profil" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Profile</a>
