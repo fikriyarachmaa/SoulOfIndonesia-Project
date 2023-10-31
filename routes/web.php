@@ -40,6 +40,9 @@ Route::get('/auth/regis', function () {
 Route::get('/admin/admin', function () {
     return view('admin/admin');
 });
+Route::get('/admin/test', function () {
+    return view('admin/test');
+});
 Route::get('/rekom/rekomwisata', function () {
     return view('rekom/rekomendasiWisata');
 });
