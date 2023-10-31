@@ -84,9 +84,17 @@
         <!-- area content -->
         <div class="flex-1 p-4">
             <!-- search bar -->
-            <div class="relative max-w-md w-full">
-                
+           <div class="bg-white w-full rounded">
+            <div class="grid grid-cols-2">
+                <div class="p-auto m-auto">
+                    <h1 class="font-semibold text-3xl">Selamat Datang Fikriya!</h1>
+                    <h3 class="font-regular text-xl py-6">Lihat apa yang baru hari ini</h3>
+                </div>
+                <div class="p-auto m-auto">
+                    <img src="/img/dashboardmin.png" alt="imgadmin">
+                </div>   
             </div>
+           </div>
 
             <!-- Wadah 4 bagian (diperkecil untuk perangkat kecil) -->
             <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3  gap-4 mt-2 p-2">
@@ -114,9 +122,9 @@
                         </div>
                     </div>
 
-                <!-- Bagian 1 - Galeri Batik -->
+                <!-- Bagian 3 - Produk -->
                     <div class="bg-white p-4 rounded-md">
-                        <h2 class="text-gray-500 text-lg font-semibold pb-1">Galeri Batik</h2>
+                        <h2 class="text-gray-500 text-lg font-semibold pb-1">Produk</h2>
                         <div class="my1-"></div> <!-- ruang batas -->
                         <div class="bg-gradient-to-r from-cyan-300 to-cyan-500 h-px  mb-6"></div> <!-- garis batas -->
                         <div class="chart-container" style="position: relative; height:150px; width:100%">
