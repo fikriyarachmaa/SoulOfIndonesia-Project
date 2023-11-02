@@ -5,7 +5,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        /* Agregar estilos para la vista de dispositivos pequeños */
+        
         @media (max-width: 768px) {
             .flex-wrap {
                 display: flex;
@@ -20,56 +20,10 @@
 </head>
 <body>
 <div class="flex flex-col h-screen bg-gray-100">
-    <!-- navbar start-->
-    <div class="bg-white text-black shadow w-full p-2 flex items-center justify-between">
-        <div class="flex items-center">
-            <div class="hidden md:flex items-center px-4"> <!-- logo -->
-                <img src="/img/logoSOI.png" alt="Logo" class="w-10 h-10 mr-2">
-                <h2 class="font-bold text-xl">Soul of Indonesia</h2>
-            </div>
-        </div>
-            <div class="px-5 space-x-5">
-                <button>
-                    <i class="fas fa-user text-gray-500 text-lg"></i>
-                </button>
-            </div>
-        </div>
-    <!-- navbar end-->
-
+    @include('admin.navbar')
     <!-- isi start -->
     <div class="flex-1 flex">
-        <!-- sidebar start -->
-        <div class="p-2 bg-white shadow h-full w-60 flex flex-col hidden md:flex" id="sideNav">
-            <nav>
-                <a class="block text-gray-500 py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="#">
-                    <i class="fas fa-home mr-2"></i>Dashboard
-                </a>
-                <a class="block text-gray-500 py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="#">
-                    <i class="fas fa-file-alt mr-2"></i>Profile
-                </a>
-                <a class="block text-gray-500 py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="#">
-                    <i class="fas fa-users mr-2"></i>Artikel
-                </a>
-                <a class="block text-gray-500 py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="#">
-                    <i class="fas fa-store mr-2"></i>Rekomendasi Wisata
-                </a>
-                <a class="block text-gray-500 py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan- 400 hover:to-cyan-300 hover:text-white"href="#">
-                    <i class="fas fa-exchange-alt mr-2"></i>Produk
-                </a>
-            </nav>
-
-            <!-- logout start -->
-            <a class="block text-gray-500 py-2.5 px-4 my-2 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white mt-auto" href="#">
-                <i class="fas fa-sign-out-alt mr-2"></i>Log out
-            </a>
-                <!-- garis batas -->
-                <div class="bg-gradient-to-r from-cyan-300 to-cyan-500 h-px mt-2"></div>
-                <!-- Copyright start -->
-                <p class="mb-1 px-5 py-3 text-left text-xs text-cyan-500">Copyright SOI@2023</p>
-                <!-- Copyright end -->
-            <!-- logout end -->
-        </div>
-        <!-- sidebar end -->
+        @include('admin.sidebar')
 
         <!-- main start -->
         <div class="flex-1 p-4">

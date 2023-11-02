@@ -37,12 +37,19 @@ Route::get('/auth/login', function () {
 Route::get('/auth/regis', function () {
     return view('auth/regis');
 });
+
+/*ADMIN ROUTE*/
 Route::get('/admin/admin', function () {
     return view('admin/admin');
 });
-Route::get('/admin/test', function () {
-    return view('admin/test');
+Route::get('/admin/profile', function () {
+    return view('admin/profile');
 });
+Route::get('/admin/artikel', function () {
+    return view('admin/artikel');
+});
+/*ADMIN ROUTE*/
+
 Route::get('/rekom/rekomwisata', function () {
     return view('rekom/rekomendasiWisata');
 });
