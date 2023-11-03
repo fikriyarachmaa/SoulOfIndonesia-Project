@@ -33,63 +33,56 @@
   
     <!--kelebihan -->
     <section class="mt-32 font-Raleway">
-        <div class="grid  m:grid-cols-2 lg:grid-cols-2">
-            <!-- beragam pilihan start -->
-            <div class="border border-yellow mx-auto">
-                <div class="grid sm:grid-cols-2 lg:grid-cols-2">
-                    <div class="p-4">
-                        <img src="/img/cart-icon.png" alt="cart" class="w-20 h-20 mx-auto place-content-center">
-                    </div>
-
-                    <div class="m-auto pr-4">
-                        <p class="text-2xl font-bold">Beragam pilihan</p>
-                        <p class="text-sm">Berbagai kategori produk</p>
-                    </div>
-                </div>
+    <div class="grid grid-cols-1 gap-8 mt-10 mx-10 xl:mt-12 xl:gap-24 md:grid-cols-2 xl:grid-cols-2">
+        <div class="md:flex md:items-start p-3 md:-mx-4 mt-8 border-2 border-green-darkest rounded-lg shadow-lg">
+            <span class="inline-block p-2 text-blue-500 w-20 rounded-xl md:mx-4 dark:text-white">
+                <img src="/img/phone-icon.png" alt="phone">
+            </span>
+            <div class="mt-4 md:mx-4 md:mt-0 p-2">
+                <h1 class="text-xl font-semibold text-green-dark capitalize dark:text-white">Mudah Berkomunikasi</h1>
+                    <p class="mt-3 text-green-dark dark:text-green-dark">
+                        Cepat terhubung dengan seller melalui kontak yang tersedia
+                    </p>
             </div>
-            <!-- beragam pilihan end-->
-
-            <!-- mudah komunikasi start-->
-            <div class="border border-yellow mx-auto">
-                <div class="grid flex sm:grid-cols-1 lg:grid-cols-2">
-                    <div class="p-4">
-                        <img src="/img/phone-icon.png" alt="cart" class="w-20 h-20 mx-auto place-content-center">
-                    </div>
-
-                    <div class="m-auto pr-4">
-                        <p class="text-2xl font-bold">Mudah Komunikasi</p>
-                        <p class="text-sm">Cepat terhubung dengan seller</p>
-                    </div>
-                </div>
-            </div>
-            <!-- mudah komunikasi end-->
         </div>
+        <div class="md:flex md:items-start p-3 md:-mx-4 mt-8 border-2 border-green-darkest rounded-lg shadow-lg">
+            <span class="inline-block p-2 text-blue-500 w-20 rounded-xl md:mx-4 dark:text-white">
+                <img src="/img/cart-icon.png" alt="phone">
+            </span>
+            <div class="mt-4 md:mx-4 md:mt-0 p-2">
+                <h1 class="text-xl font-semibold text-green-dark capitalize dark:text-white">Beragam Pilihan</h1>
+                    <p class="mt-3 text-green-dark dark:text-green-dark">
+                        Tersedia beberapa pilihan kategori produk dengan beragam pilihan
+                    </p>
+            </div>
+        </div>
+    </div>
     </section>
     <!--kelebihan -->
    
     <!--kategori produk -->
     <section class="-mb-10 -mb-10 font-Raleway">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="py-4 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                 <h2 class="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Kategori Produk</h2>
-                <div class="grid gap-4 sm:grid-cols-4 lg:grid-cols-4">
-                <category class="max-w-xs">
+                <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <category class="max-w-xs">
                 <a href="#">
-                  <img src="/img/kain.png" class="rounded-lg" alt="Image 1">
+                  <img src="/img/kain.png" class="rounded-lg shadow-lg" alt="Image 1">
                 </a>
           </category>
           <category class="max-w-xs">
               <a href="#">
-              <img src="/img/pakaian.png" class="rounded-lg" alt="Image 2">
+              <img src="/img/pakaian.png" class="rounded-lg shadow-lg" alt="Image 2">
               </a>
           </category>
           <category class="max-w-xs">
               <a href="#">
-                  <img src="/img/aksesoris.png" class="rounded-lg" alt="Image 3">
+                  <img src="/img/aksesoris.png" class="rounded-lg shadow-lg" alt="Image 3">
               </a>
           </category>
           <category class="max-w-xs">
               <a href="#">
-                  <img src="/img/kerajinan.png" class="rounded-lg" alt="Image 4">
+                  <img src="/img/kerajinan.png" class="rounded-lg shadow-lg" alt="Image 4">
               </a>
           </category>
       </div>                
@@ -98,196 +91,98 @@
   <!--kategori produk -->
   
   <!-- produk -->
-  <section class="-mb-10 font-Raleway">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <h2 class="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Produk Untukmu</h2>
-            <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-5">
-                
-            <div class="w-full max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="" src="/img/batiksolo.png" alt="product image" />
-                </a>
-                <div class="px-5 pb-5">
-                    <a href="#">
-                         <h5 class="pt-4 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
-                    </a>
-                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
-                <div class="flex items-center justify-end">
-                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
-                </div>
-                    <div class="py-2 -mb-2">
-                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-full max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="" src="/img/batiksolo.png" alt="product image" />
-                </a>
-                <div class="px-5 pb-5">
-                    <a href="#">
-                         <h5 class="pt-4 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
-                    </a>
-                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
-                <div class="flex items-center justify-end">
-                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
-                </div>
-                    <div class="py-2 -mb-2">
-                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-full max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="" src="/img/batiksolo.png" alt="product image" />
-                </a>
-                <div class="px-5 pb-5">
-                    <a href="#">
-                         <h5 class="pt-4 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
-                    </a>
-                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
-                <div class="flex items-center justify-end">
-                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
-                </div>
-                    <div class="py-2 -mb-2">
-                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-full max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="" src="/img/batiksolo.png" alt="product image" />
-                </a>
-                <div class="px-5 pb-5">
-                    <a href="#">
-                         <h5 class="pt-4 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
-                    </a>
-                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
-                <div class="flex items-center justify-end">
-                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
-                </div>
-                    <div class="py-2 -mb-2">
-                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-full max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="" src="/img/batiksoganparang.png" alt="product image" />
-                </a>
-                <div class="px-5 pb-5">
-                    <a href="#">
-                         <h5 class="pt-4 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
-                    </a>
-                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
-                <div class="flex items-center justify-end">
-                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
-                </div>
-                    <div class="py-2 -mb-2">
-                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-full max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="" src="/img/batiksolo.png" alt="product image" />
-                </a>
-                <div class="px-5 pb-5">
-                    <a href="#">
-                         <h5 class="pt-4 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
-                    </a>
-                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
-                <div class="flex items-center justify-end">
-                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
-                </div>
-                    <div class="py-2 -mb-2">
-                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-full max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="" src="/img/blousesandra.png" alt="product image" />
-                </a>
-                <div class="px-5 pb-5">
-                    <a href="#">
-                         <h5 class="pt-4 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
-                    </a>
-                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
-                <div class="flex items-center justify-end">
-                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
-                </div>
-                    <div class="py-2 -mb-2">
-                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-full max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="" src="/img/rokpendek.png" alt="product image" />
-                </a>
-                <div class="px-5 pb-5">
-                    <a href="#">
-                         <h5 class="pt-4 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
-                    </a>
-                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
-                <div class="flex items-center justify-end">
-                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
-                </div>
-                    <div class="py-2 -mb-2">
-                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-full max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="" src="/img/roklilit.png" alt="product image" />
-                </a>
-                <div class="px-5 pb-5">
-                    <a href="#">
-                         <h5 class="pt-4 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
-                    </a>
-                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
-                <div class="flex items-center justify-end">
-                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
-                </div>
-                    <div class="py-2 -mb-2">
-                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="" src="/img/kemejabatikpria.png" alt="product image" />
-                </a>
-                <div class="px-5 pb-5">
-                    <a href="#">
-                         <h5 class="pt-4 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Kain Batik Solo</h5>
-                    </a>
-                    <p class="text-gray-500 text-sm italic">Dikirim dari Solo</p>
-                <div class="flex items-center justify-end">
-                    <span class="text-lg font-bold text-gray-900 dark:text-white">Rp 110.000</span>
-                </div>
-                    <div class="py-2 -mb-2">
-                        <button type="button" class="text-white bg-gradient-to-r from-sky-400 to-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Show More</button>
-                    </div>
-                </div>
-            </div>
-        </div> 
-
-        <div class="flex justify-center py-10">
-                <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-none border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Lihat Lainnya</button>
-        </div>        
-  </section>
+  <section class="text-gray-600 body-font">
+  <div class="container px-5 py-8">
+  <h2 class="text-xl font-bold text-gray-900 dark:text-white">Produk Untukmu</h2>
+    <div class="flex grid grid-cols gap-8 xl:mt-8 xl:gap-8 md:grid-cols-2 xl:grid-cols-4">
+      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
+        <a href="#" class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/blousesandra.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+          <p class="mt-1">$16.00</p>
+        </div>
+      </div>
+      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
+        <a href="#" class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/batiksolo.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+          <p class="mt-1">$21.15</p>
+        </div>
+      </div>
+      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
+        <a href="#" class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/roklilit.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+          <p class="mt-1">$12.00</p>
+        </div>
+      </div>
+      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
+        <a href="#" class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/batiksoganparang.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+          <p class="mt-1">$18.40</p>
+        </div>
+      </div>
+      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
+        <a href="#" class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/kemejabatikpria.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+          <p class="mt-1">$16.00</p>
+        </div>
+      </div>
+      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
+        <a href="#" class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/rokpendek.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+          <p class="mt-1">$21.15</p>
+        </div>
+      </div>
+      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
+        <a href="#" class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/blousesandra.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+          <p class="mt-1">$12.00</p>
+        </div>
+      </div>
+      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
+        <a href="#" class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/blousesandra.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+          <p class="mt-1">$18.40</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   <!-- produk -->
+  <div class="flex justify-center items-center pb-12 pt-4">
+    <button type="button" class="text-green-dark hover:text-white border-2 border-green-darkest hover:bg-green-light focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">Lihat lainnya</button> 
+  </div>
+ 
 
   @include('components.footer')
 </body>

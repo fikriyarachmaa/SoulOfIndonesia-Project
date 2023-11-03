@@ -19,9 +19,16 @@ Route::get('/', function () {
 Route::get('/landingpage', function () {
     return view('landingpage');
 });
+
+/*BATIK SHOP ROUTE*/
 Route::get('/batikshop/batikshop', function () {
     return view('batikshop/batikShop');
 });
+Route::get('/batikshop/viewProduk', function () {
+    return view('batikshop/viewProduk');
+});
+/*BATIK SHOP ROUTE*/
+
 Route::get('/components/header', function () {
     return view('components/header');
 });
@@ -47,6 +54,12 @@ Route::get('/admin/profile', function () {
 });
 Route::get('/admin/artikel', function () {
     return view('admin/artikel');
+});
+Route::get('/admin/rekomendasiWisata', function () {
+    return view('admin/rekomendasiWisata');
+});
+Route::get('/admin/produk', function () {
+    return view('admin/produk');
 });
 /*ADMIN ROUTE*/
 

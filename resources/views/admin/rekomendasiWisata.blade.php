@@ -32,7 +32,7 @@
             <div class="grid grid-cols-2 items-center bg-white dark:text-white dark:bg-gray-800">
                 <div>
                     <h2 class="p-5 text-xl font-semibold text-left text-gray-900">
-                        Artikel
+                        Rekomendasi Wisata
                     </h2>
                 </div>
                 <div class="flex justify-end pr-4">
