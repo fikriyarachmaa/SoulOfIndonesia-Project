@@ -72,3 +72,18 @@ Route::get('/galeribatik/batikjamugendong', function () {
 Route::get('/rekom/kampungkauman', function () {
     return view('rekom/kampungkauman');
 });
+
+/*PENGRAJIN ROUTE*/
+Route::get('/pengrajin/pengrajin', function () {
+    return view('pengrajin/pengrajin');
+});
+Route::get('/pengrajin/profile', function () {
+    return view('pengrajin/profile');
+});
+Route::get('/pengrajin/biodata', function () {
+    return view('pengrajin/biodata');
+});
+Route::get('/pengrajin/produk', function () {
+    return view('pengrajin/produk');
+});
+/*PENGRAJIN ROUTE*/
