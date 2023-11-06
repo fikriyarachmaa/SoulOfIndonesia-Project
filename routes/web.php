@@ -61,6 +61,9 @@ Route::get('/admin/rekomendasiWisata', function () {
 Route::get('/admin/produk', function () {
     return view('admin/produk');
 });
+Route::get('/admin.regis', function () {
+    return view('admin/regis');
+});
 /*ADMIN ROUTE*/
 
 Route::get('/rekom/rekomwisata', function () {
