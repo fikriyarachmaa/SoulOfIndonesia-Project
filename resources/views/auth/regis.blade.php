@@ -48,7 +48,8 @@
         <label class="text-gray-800 font-semibold block my-3 text-md" for="logo_bisnis">Logo Bisnis :</label>
         <input class="w-full bg-gray-100 px-4 py-2 rounded-lg" style="outline: 1px solid green;" type="file" name="logo_bisnis" id="logo_bisnis" accept="image/*" />
     </div>
-    <button type="submit" class="w-full h-50 mt-6 bg-green-500 rounded-lg px-1 py-2 text-lg text-white tracking-wide font-bold font-sans hover:bg-green-300 hover:text-white mx-auto block" >Daftar</button>
+
+    <a href="/auth/login" class="w-full h-50 mt-6 bg-green-500 rounded-lg px-1 py-2 text-lg text-white tracking-wide font-bold font-sans hover:bg-green-300 hover:text-white mx-auto block text-center" >Daftar</a>
 </form>
 </div>
 </body>

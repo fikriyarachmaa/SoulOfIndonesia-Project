@@ -144,9 +144,9 @@
           <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/blousesandra.png">
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
-          <p class="mt-1">$16.00</p>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KATEGORI</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Kemeja Wanita</h2>
+          <p class="mt-1">Rp 120.000</p>
         </div>
       </div>
       <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
@@ -154,9 +154,9 @@
           <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/batiksolo.png">
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
-          <p class="mt-1">$21.15</p>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KATEGORI</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Kain Batik</h2>
+          <p class="mt-1">Rp 100.000</p>
         </div>
       </div>
       <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
@@ -164,9 +164,11 @@
           <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/roklilit.png">
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
-          <p class="mt-1">$12.00</p>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+            KATEGORI
+          </h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Rok Batik</h2>
+          <p class="mt-1">Rp 170.000</p>
         </div>
       </div>
       <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
@@ -174,14 +176,14 @@
           <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/batiksoganparang.png">
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
-          <p class="mt-1">$18.40</p>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KATEGORI</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Kain Batik</h2>
+          <p class="mt-1">Rp 200.000</p>
         </div>
       </div>
     </div>
     <div class="flex justify-center items-center pt-12">
-      <a href="/batikshop/batikshop" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-8 rounded-lg hover:bg-yellow hover:text-cream">Telusuri lebih banyak</a>
+      <a href="/batikshop/batikshop" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-8 rounded-lg hover:bg-yellow hover:text-cream">Jelajahi Hasil Karya Batik Lainnya</a>
     </div>
   </div>
 </section>
