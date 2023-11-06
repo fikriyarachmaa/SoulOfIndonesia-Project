@@ -21,7 +21,7 @@
 </head>
 <body>
 <div class="flex flex-col h-screen bg-cream">
-    @include('admin.navbar')
+    @include('pengrajin.navbar')
     <!-- isi start -->
     <div class="flex-1 flex">
         @include('pengrajin.sidebar')

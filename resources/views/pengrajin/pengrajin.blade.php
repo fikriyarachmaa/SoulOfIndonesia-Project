@@ -21,7 +21,7 @@
 </head>
 <body>
 <div class="flex flex-col h-screen bg-cream">
-    @include('admin.navbar')
+    @include('pengrajin.navbar')
     <!-- isi start -->
     <div class="flex-1 flex">
         @include('pengrajin.sidebar')
@@ -32,7 +32,7 @@
             <div class="bg-white w-full rounded shadow">
                 <div class="grid grid-cols-2">
                     <div class="p-auto m-auto">
-                        <h1 class="font-semibold text-3xl">Selamat Datang, SALMA!</h1>
+                        <h1 class="font-semibold text-3xl">Selamat Datang, JEFRI!</h1>
                         <h3 class="font-regular text-xl py-6">Lihat apa yang baru hari ini</h3>
                     </div>
                     <div class="p-auto m-auto">
