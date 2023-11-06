@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profil | Pengrajin</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
@@ -91,10 +91,10 @@
                     </div>
                 </div> 
                 <div class="mt-16 flex flex-col items-center">
-                    <h4 class="text-xl font-bold text-gray-600">Salma Novita</h4>
+                    <h4 class="text-xl font-bold text-gray-600">Jefri Nichol</h4>
                     <p class="text-base font-normal text-gray-600">Pengrajin</p>
-                    <p class="text-base font-normal text-gray-600 pt-4">salmanovita95@gmail.com</p>
-                    <p class="text-base font-normal text-gray-600 pb-4">Perempuan</p>
+                    <p class="text-base font-normal text-gray-600 pt-4">jefrinichol@gmail.com</p>
+                    <p class="text-base font-normal text-gray-600 pb-4">Laki-laki</p>
                 </div> 
             </div>  
             </div>
