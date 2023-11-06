@@ -91,10 +91,10 @@
                     </div>
                 </div> 
                 <div class="mt-16 flex flex-col items-center">
-                    <h4 class="text-xl font-bold text-gray-600">Salma Novita</h4>
+                    <h4 class="text-xl font-bold text-gray-600">Jefri Nichol</h4>
                     <p class="text-base font-normal text-gray-600">Pengrajin</p>
-                    <p class="text-base font-normal text-gray-600 pt-4">salmanovita95@gmail.com</p>
-                    <p class="text-base font-normal text-gray-600 pb-4">Perempuan</p>
+                    <p class="text-base font-normal text-gray-600 pt-4">jefrinichol@gmail.com</p>
+                    <p class="text-base font-normal text-gray-600 pb-4">Laki-laki</p>
                 </div> 
             </div>  
             </div>
