@@ -9,111 +9,342 @@
 @include('components.header')
 <section>
     <!-- Ini adalah halaman awal -->
-    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:grid-cols-12">
+    <div class="grid max-w-screen-xl px-4 pt-16 pb-8 mx-auto lg:grid-cols-12">
         <div class="lg:col-span-7 flex flex-col justify-center">
             <div style="text-align: center;">
                 <h1 class="max-w-2xl mb-4 text-4xl font-bold leading-none md:text-5xl xl:text-6xl text-green-darkest">Soul Of Indonesia</h1>
                 <p class="max-w-4xl mb-6 font-bold text-gray-500 lg:mb-8 md:text-lg lg:text-xl text-green-darkest">Get To Know About Batik Nusantara</p>
-                <a href="#" class="inline-flex items-cente px-5 py-3 text-base font-bold text-center text-green-darkest rounded-lg bg-green-pastel hover:bg-yellow" style="border-radius: 70px; display: inline-block; margin: 0 auto; margin-top: 20px;">
+                <a href="#section2" class="inline-flex items-center px-5 py-3 text-base font-bold text-center text-green-darkest rounded-lg bg-green-pastel hover:bg-yellow hover:text-cream" style="border-radius: 70px; display: inline-block; margin: 0 auto; margin-top: 20px;">
                     Mulai Jelajah Batik
                 </a>
             </div>
         </div>
-        <div class="lg:col-span-5 hidden lg:flex pt-20">
-            <img src="\img\hero.png" alt="" class="max-w-full">
+        <div class="lg:col-span-5 lg:flex pt-20">
+            <img src="\img\hero.png" alt="" class="max-w-full mx-auto"> 
         </div>
     </div>
 </section>
 
 
-<section>
      <!-- Ini adalah halaman kedua -->
-     <div class="min-w-screen min-h-screen flex items-center justify-center py-12  ">
-    <div class="w-full flex rounded-lg bg-gradient-to-r from-green-light via-30% to-green-pastel to-90% shadow-lg " style="margin: 50px; padding: 0px; position: relative; pt-12">
-        <div class="w-1/2 p-5"> 
-            <p class="text-lg md:text-xl lg:text-2xl text-green-darkest font-bold text-justify px-5 pt-12">
-                "Seni tradisional pembuatan kain yang unik dan khas dari Indonesia. 
-                Dengan melalui proses pewarnaan kain menggunakan malam lilin untuk melindungi bagian tertentu dari kain sehingga motif dan pola tertentu dapat terbentuk ketika kain diwarnai. 
-                Batik sendiri bagian ciri khas serta budaya Indonesia dan telah menjadi salah satu ikon budaya yang paling dikenal di dunia."
-            </p> 
-            <div class="flex justify-center items-center pt-8">
-            <button type="submit" class="bg-cream mt-5 py-3 px-6  rounded-2xl hover:bg-yellow-700 hover:-translate-y-1 transition-all duration-500 text-green-dark font-semibold mb-2">Galeri Batik</button>
+     <section id="section2">
+    <div class="min-w-screen min-h-screen flex items-center justify-center pt-16 pb-8">
+        <div class="w-full flex rounded-lg bg-gradient-to-r from-green-light via-30% to-green-pastel to-90% shadow-lg" style="margin: 50px; padding: 0px;">
+            <div class="w-1/2 p-5">
+                <p class="text-lg md:text-xl lg:text-2xl text-green-darkest font-bold text-justify px-5 pt-12">
+                    "Seni tradisional pembuatan kain yang unik dan khas dari Indonesia. Dengan melalui proses pewarnaan kain menggunakan malam lilin untuk melindungi bagian tertentu dari kain sehingga motif dan pola tertentu dapat terbentuk ketika kain diwarnai. Batik sendiri bagian ciri khas serta budaya Indonesia dan telah menjadi salah satu ikon budaya yang paling dikenal di dunia."
+                </p>
+                <div class="flex justify-center items-center pt-8">
+                    <a href ="/galeribatik/galeribatik" class="bg-cream mt-5 py-3 px-6 rounded-2xl hover:bg-yellow-700 hover:-translate-y-1 transition-all duration-500 text-green-dark font-semibold mb-2 hover:bg-yellow hover:text-cream">Galeri Batik</a>
+                </div>
             </div>
-        </div>
-        <!-- Garis Vertikal -->
-        <div class="w-1 border-l border-green-darkest"></div>
-        <div class="w-1/2 p-5 relative" style="display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end;">
-            <h1 class="max-w-2xl mb-4 text-4xl font-bold leading-none md:text-5xl xl:text-6xl text-green-darkest text-center pt-12">Apa itu Batik Indonesia?</h1>
-            <div class="position: relative; margin: 0; padding: 0;">
-                <img src="\img\hiasan2.png" alt="" class="margin: 0; padding: 0;">
+            <!-- Garis Vertikal -->
+            <div class="w-1 border-l border-green-darkest"></div>
+            <div class="w-1/2 p-5">
+                <h1 class="max-w-2xl mb-4 text-4xl font-bold leading-none md:text-5xl xl:text-6xl text-green-darkest text-center pt-12">Apa itu Batik Indonesia?</h1>
+                <div class="text-center mx-auto"> <!-- Tambahkan class text-center dan mx-auto di sini -->
+                    <img src="\img\hiasan2.png" alt="">
+                </div>
             </div>
         </div>
     </div>
-</div>
 </section>
+
+
+
+<!-- Ini adalah halaman ketiga -->
+
+    <section id="opening" class="pt-16 pb-16">
+        <div class="container mx-auto">
+            <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center pb-16">Trending Batik</h1>
+            <div class="flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2 px-4 text-center">
+                    <div class="mt-10">
+                        <img src="/img/jamugendong.png" alt="Batik Jamu Gendong" class="max-w-full h-auto mx-auto md:max-w-md lg:max-w-md">
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 px-4">
+                    <h2 class="text-yellow font-semibold text-xl md:text-2xl lg:text-3xl mb-4">Batik Jamu Gendong Motif Tejo</h2>
+                    <p class="text-green-darkest font-regular pb-8 md:pb-10 text-justify">Batik Jamu Gendong atau Batik Mbok Jamu adalah salah satu motif batik tradisional Indonesia yang menggambarkan seorang wanita yang membawa keranjang atau gendongan berisi ramuan jamu tradisional.</p>
+                    
+                    <div class="flex justify-center items-center pt-8">
+                    <a href="/galeribatik/batikjamugendong" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                    <a href="/galeribatik/galeribatik" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out ml-4">Informasi Batik Lainnya</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Ini adalah halaman keempat -->
+    {{-- List Section Start--}}
+    <section id="listbatik" class="pt-16 pb-8">
+        <div class="container mx-auto">
+            <div class="w-full px-4">
+                <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center pb-4">Bosen wisata itu-itu aja?</h1>
+                <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center pb-16">Cobain jelajah wisata batik Indonesia</h1>
+            </div>
+    
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-cream rounded-xl overflow-hidden shadow-lg mb-10 ">
+                        <img src="/img/kampunggiriloyo.png" alt="kampung batik giriloyo" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3 class="text-medium font-semibold text-yellow mb-2 truncate hover:text-green-darkest text-center">Kampung Batik Giriloyo</h3>
+                            <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Yogyakarta</h3>
+                            <div class="text-center">
+                                <a href="/rekom/kampungkauman" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-cream rounded-xl overflow-hidden shadow-lg mb-10 ">
+                        <img src="/img/kampungsemarang.png" alt="batik parang" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3 class="text-medium font-semibold text-yellow mb-2 truncate hover:text-green-darkest text-center">Semarang Batik Village</h3>
+                            <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Semarang</h3>
+                            <div class="text-center">
+                                <a href="/rekom/kampungkauman" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-cream rounded-xl overflow-hidden shadow-lg mb-10 ">
+                        <img src="/img/rumahpalbatu.png" alt="Rumah batik palbatu, jakarta" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3 class="text-medium font-semibold text-yellow mb-2 truncate hover:text-green-darkest text-center">Rumah Batik Palbatu</h3>
+                            <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Jakarta</h3>
+                            <div class="text-center">
+                                <a href="/rekom/kampungkauman" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="w-full px-4 flex items-center justify-center">
+                <a href ="/rekom/rekomwisata" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-8 rounded-lg hover:bg-yellow hover:text-cream">Telusuri lebih banyak</a>
+            </div>
+        </div>
+    </section>
+
+
+
+     <!-- Ini adalah halaman kelima -->
+     <section class="text-gray-600 body-font">
+  <div class="container mx-auto pt-16 pb-16">
+    <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center pb-16 pt-16">Batikshop</h1>
+    <h2 class="text-xl font-bold text-gray-900 dark:text-white">Produk Untukmu</h2>
+    <div class="flex grid grid-cols gap-8 xl:mt-8 xl:gap-8 md:grid-cols-2 xl:grid-cols-4">
+      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
+        <a href="#" class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/blousesandra.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+          <p class="mt-1">$16.00</p>
+        </div>
+      </div>
+      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
+        <a href="#" class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/batiksolo.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+          <p class="mt-1">$21.15</p>
+        </div>
+      </div>
+      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
+        <a href="#" class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/roklilit.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+          <p class="mt-1">$12.00</p>
+        </div>
+      </div>
+      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
+        <a href="#" class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/batiksoganparang.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+          <p class="mt-1">$18.40</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center pt-12">
+      <a href="/batikshop/batikshop" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-8 rounded-lg hover:bg-yellow hover:text-cream">Telusuri lebih banyak</a>
+    </div>
+  </div>
+</section>
+
 
 <section>
-<div class="flex flex-row space-x-4" >
-    <div class="relative flex w-96 flex-col rounded-xl bg-white text-gray-700 shadow-md ml-10">
-      <div class="relative mx-4 my-4 mt-4 h-96 overflow-hidden rounded-xl bg-white text-gray-700">
-        <img
-          src="img/batiksoganparang.png"
-          class="h-full w-full object-cover"
-        />
-        <div class="absolute inset-0 flex items-center justify-center text-black text-lg font-semibold opacity-0 hover:opacity-100 transition-opacity bg-white hover:bg-opacity-50 duration-300">
-        
-        Kain Batik Parang
-        <br>Rp 170.000</br>
+     <!-- Ini adalah halaman keenam -->
+<div class="container my-24 mx-auto md:px-6 pt-8">
+  <section class="mb-32 text-center">
+    <h2 class="mb-12 text-3xl font-bold">Ulasan</h2>
+
+    <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
+      <div class="mb-12 md:mb-0">
+        <div class="mb-6 flex justify-center">
+          <img src="img/maria.jpg"
+            class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
         </div>
+        <h5 class="mb-2 text-lg font-bold">Maria Smantha</h5>
+        <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
+          Content Writer
+        </h6>
+        <p class="mb-4">
+        Website ini sangat bermanfaat untuk mengenal berbagai jenis batik di Indonesia. Melalui website ini bisa membantu saya sebagai pelanggan untuk membeli produk batik. 
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
+            <path fill="currentColor"
+              d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
+          </svg>
+        </p>
+        <ul class="mb-0 flex justify-center">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+              <path fill="currentColor"
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+              <path fill="currentColor"
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+              <path fill="currentColor"
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+              <path fill="currentColor"
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+              <path fill="currentColor"
+                d="m480 757 157 95-42-178 138-120-182-16-71-168v387ZM233 976l65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <div class="mb-12 md:mb-0">
+        <div class="mb-6 flex justify-center">
+          <img src="img/lisa.jpg"
+            class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
+        </div>
+        <h5 class="mb-2 text-lg font-bold">Lisa Barito</h5>
+        <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
+          Graphic Designer
+        </h6>
+        <p class="mb-4">
+          Melalui website ini saya dapat membeli produk batik, sehingga memudahkan saya membeli fashion yang mengangkat kebudayaan Indonesia. Serta saya senang bisa memakai karya batik dari para pengrajin batik.
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
+            <path fill="currentColor"
+              d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
+          </svg>
+        </p>
+        <ul class="mb-0 flex justify-center">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+              <path fill="currentColor"
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+              <path fill="currentColor"
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+              <path fill="currentColor"
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+              <path fill="currentColor"
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+              <path fill="currentColor"
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <div class="mb-0">
+        <div class="mb-6 flex justify-center">
+          <img src="img/baskara.jpg"
+            class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
+        </div>
+        <h5 class="mb-2 text-lg font-bold">Bagus Adi Kara</h5>
+        <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
+          Marketing Specialist
+        </h6>
+        <p class="mb-4">
+         Saya senang dapat dengan mudah menemukan rekomendasi tempat wisata batik. Sehingga saya bisa mengajak anak saya liburan sekaligus mengenalkan warisan budaya Indonesia.
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
+            <path fill="currentColor"
+              d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
+          </svg>
+        </p>
+        <ul class="mb-0 flex justify-center">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+              <path fill="currentColor"
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+              <path fill="currentColor"
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+              <path fill="currentColor"
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+              <path fill="currentColor"
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+              <path fill="currentColor"
+                d="m323 851 157-94 157 95-42-178 138-120-182-16-71-168-71 167-182 16 138 120-42 178Zm-90 125 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-355Z" />
+            </svg>
+          </li>
+        </ul>
       </div>
     </div>
-
-    <div class="relative flex w-96 flex-col rounded-xl bg-white text-gray-700 shadow-md ml-20">
-      <div class="relative mx-4 my-4 mt-4 h-96 overflow-hidden rounded-xl bg-white text-gray-700">
-        <img
-          src="img/kemejabatikpria.png"
-          class="h-full w-full object-cover"
-        />
-        <div class="absolute inset-0 flex items-center justify-center text-black text-lg font-semibold opacity-0 hover:opacity-100 bg-white transition-opacity hover:bg-opacity-50 duration-300">
-        Kemeja Batik Pria
-          <br>Rp 130.000</br>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="relative flex w-96 flex-col rounded-xl bg-white text-gray-700 shadow-md ml-20">
-  <div class="relative mx-4 my-4 mt-4 h-96 overflow-hidden rounded-xl bg-white text-gray-700">
-    <img
-      src="img/rokpendek.png"
-      class="h-full w-full object-cover"
-    />
-    <div class="absolute inset-0 flex items-center justify-center text-black text-lg font-semibold opacity-0 hover:opacity-100 bg-white hover:bg-opacity-50 transition-opacity duration-300">
-      Rok Batik Remaja
-      <br>Rp 200.000</br>
-    </div>
-  </div>
+  </section>
 </div>
-
-    <div class="relative flex w-96 flex-col rounded-xl bg-white text-gray-700 shadow-md ml-20 mr-1">
-      <div class="relative mx-4 my-4 mt-4 h-96 overflow-hidden rounded-xl bg-white text-gray-700">
-        <img
-          src= "img/blousesandra.png"
-          class="h-full w-full object-cover"
-        />
-        <div class="absolute inset-0 flex items-center justify-center text-black text-lg font-semibold opacity-0 hover:opacity-100 hover:bg-opacity-50 transition-opacity bg-white duration-300">
-          Blouse Batik Wanita
-        <br>Rp 200.000</br>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
-
-
-
-
-  
-
+@include('components.footer')
 </body>
 </html>
