@@ -23,7 +23,7 @@
 <body class="bg-gray-100">
 <!-- div awal -->
 <div class="flex flex-col h-screen">
-    @include('admin.navbar')
+    @include('pengrajin.navbar')
     <!-- isi start -->
     <div class="flex-1 flex ">
         @include('pengrajin.sidebar')
@@ -36,11 +36,11 @@
             <form>
                 <div class="mb-2">
                     <label for="nama" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Nama</label>
-                    <input type="nama" id="nama" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light" placeholder="Salma Novita" required>
+                    <input type="nama" id="nama" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light" placeholder="Jefri Nichol" required>
                 </div>
                 <div class="mb-2">
                     <label for="email" class="block mb-2 text-sm font-medium text-green-dark">Email</label>
-                    <input type="email" id="email" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light" placeholder="salmanovita95@gmail.com" required>
+                    <input type="email" id="email" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light" placeholder="jefrinichol@gmail.com" required>
                 </div>
                 <div class="mb-3">
                     <label for="gender" class="block mb-2 text-sm font-medium text-green-dark">Jenis Kelamin</label>
