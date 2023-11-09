@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProdukBatikController;
+use App\Http\Controllers\artikelBatikController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,8 +48,20 @@ Route::get('/components/header', function () {
 Route::get('/components/footer', function () {
     return view('components/footer');
 });
-Route::get('/galeribatik/galeribatik', function () {
-    return view('galeribatik/galeriBatik');
+
+Route::get('/galeribatik/galeribatik', [artikelBatikController::class, 'index'])->name('articles');
+
+Route::get('/galeribatik/articleDetails', function () {
+    return view('/galeribatik/articleDetails');
+  })->name('articles');
+
+Route::get('/galeribatik/{id}', [artikelBatikController::class, 'show_details'])->name('articles');
+
+Route::get('/auth/loginuser', function () {
+    return view('auth/loginuser');
+});
+Route::get('/auth/loginadmin', function () {
+    return view('auth/loginadmin');
 });
 
 
