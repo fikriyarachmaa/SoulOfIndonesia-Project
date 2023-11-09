@@ -38,12 +38,19 @@ Route::get('/components/footer', function () {
 Route::get('/galeribatik/galeribatik', function () {
     return view('galeribatik/galeriBatik');
 });
+Route::get('/auth/loginuser', function () {
+    return view('auth/loginuser');
+});
+Route::get('/auth/loginadmin', function () {
+    return view('auth/loginadmin');
+});
 Route::get('/auth/login', function () {
     return view('auth/login');
 });
 Route::get('/auth/regis', function () {
     return view('auth/regis');
 });
+
 
 /*ADMIN ROUTE*/
 Route::get('/admin/admin', function () {
