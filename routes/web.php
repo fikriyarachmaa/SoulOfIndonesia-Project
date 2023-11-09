@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProdukBatikController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +13,20 @@ use App\Http\Controllers\ProdukBatikController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
 
 Route::get('/', function () {
     return view('welcome');
@@ -35,12 +49,21 @@ Route::get('/components/footer', function () {
 Route::get('/galeribatik/galeribatik', function () {
     return view('galeribatik/galeriBatik');
 });
+
+
+Route::get('/auth/loginuser', function () {
+    return view('auth/loginuser');
+});
+Route::get('/auth/loginadmin', function () {
+    return view('auth/loginadmin');
+});
 Route::get('/auth/login', function () {
     return view('auth/login');
 });
 Route::get('/auth/regis', function () {
     return view('auth/regis');
 });
+
 
 /*ADMIN ROUTE*/
 Route::get('/admin/admin', function () {
@@ -87,3 +110,5 @@ Route::get('/pengrajin/produk', function () {
     return view('pengrajin/produk');
 });
 /*PENGRAJIN ROUTE*/
+
+require __DIR__.'/auth.php';
