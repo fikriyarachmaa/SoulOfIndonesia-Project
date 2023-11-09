@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProdukBatikController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,12 +22,8 @@ Route::get('/landingpage', function () {
 });
 
 /*BATIK SHOP ROUTE*/
-Route::get('/batikshop/batikshop', function () {
-    return view('batikshop/batikShop');
-});
-Route::get('/batikshop/viewProduk', function () {
-    return view('batikshop/viewProduk');
-});
+
+Route::get('/batikshop/batikshop', [ProdukBatikController::class, 'index'])->name('produks');
 /*BATIK SHOP ROUTE*/
 
 Route::get('/components/header', function () {

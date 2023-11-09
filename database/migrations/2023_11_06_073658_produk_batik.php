@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('produk_batik', function (Blueprint $table) {
             $table->id();
             $table->string('nama',255);
+            $table->string('kategori')->nullable();
             $table->bigInteger('harga')->nullable();
             $table->string('kota')->nullable();
             $table->text('deskripsi')->nullable();

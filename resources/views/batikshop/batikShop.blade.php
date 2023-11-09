@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Batik Sogan Parang | BatikShop</title>
+  <title>BatikShop</title>
   @vite('resources/css/app.css')
 </head>
 <body class="bg-cream">
@@ -96,86 +96,19 @@
   <div class="container px-5 py-8">
   <h2 class="text-xl font-bold text-gray-900 dark:text-white">Produk Untukmu</h2>
     <div class="flex grid grid-cols gap-8 xl:mt-8 xl:gap-8 md:grid-cols-2 xl:grid-cols-4">
+    @foreach ($produks as $produk)
       <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
         <a href="#" class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/blousesandra.png">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="{{ $produk->foto }}">
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Pakaian</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Blouse Sandra Wanita</h2>
-          <p class="mt-1">Rp 80.000</p>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">{{ $produk->kategori }}</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">{{ $produk->nama }}</h2>
+          <p class="mt-1">{{ $produk->harga }}</p>
         </div>
       </div>
-      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
-        <a href="#" class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/batiksolo.png">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Kain</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Kain Batik Solo</h2>
-          <p class="mt-1">Rp 95.000</p>
-        </div>
-      </div>
-      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
-        <a href="#" class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/roklilit.png">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Pakaian</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Rok Lilit Batik</h2>
-          <p class="mt-1">Rp 76.000</p>
-        </div>
-      </div>
-      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
-        <a href="/batikshop/viewProduk" class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/batiksoganparang.png">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Kain</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Kain Batik Sogan Parang</h2>
-          <p class="mt-1">Rp 100.000</p>
-        </div>
-      </div>
-      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
-        <a href="#" class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/kemejabatikpria.png">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Pakaian</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Kemeja Batik Pria</h2>
-          <p class="mt-1">Rp 84.500</p>
-        </div>
-      </div>
-      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
-        <a href="#" class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/rokpendek.png">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Pakaian</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Rok Pendek Batik Wanita</h2>
-          <p class="mt-1">Rp 58.000</p>
-        </div>
-      </div>
-      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
-        <a href="#" class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/dompetbatik.jpg">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Aksesoris</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Dompet Batik</h2>
-          <p class="mt-1">Rp 24.000</p>
-        </div>
-      </div>
-      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
-        <a href="#" class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/cangkirbatik.jpg">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Kerajinan</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Cangkir Minum Motif Batik</h2>
-          <p class="mt-1">Rp 18.000</p>
-        </div>
-      </div>
+      @endforeach
+
     </div>
   </div>
 </section>
