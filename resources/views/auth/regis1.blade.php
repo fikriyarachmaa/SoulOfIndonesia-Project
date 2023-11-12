@@ -16,9 +16,11 @@
 
 <h1 class="text-green-900 font-bold text-2xl mb-1 text-center">Mari Bergabung Menjadi Penjual</h1>
 
+        <!-- Name -->
     <div>
-        <label class="text-gray-800 font-semibold block my-3 text-md" for="nama">Nama Pemilik Usaha :</label>
-        <input class="w-full bg-gray-100 px-4 py-2 rounded-lg" style="outline: 1px solid green;" type="text" name="username" id="username" placeholder="Tulis Disini..." />
+        <x-input-label class="text-gray-800 font-semibold block my-3 text-md" for="name" :value="__('Nama Pemilik Usaha :')" />
+            <x-text-input id="name" class="w-full bg-gray-100 px-4 py-2 rounded-lg" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" style="outline: 1px solid green;" type="text" name="username" id="username" placeholder="Tulis Disini..."/>
+            <x-input-error :messages="$errors->get('name')" class="mt-2" />
     </div>
     <div>
         <label class="text-gray-800 font-semibold block my-3 text-md" for="usaha">Nama Usaha :</label>
@@ -33,17 +35,35 @@
         <input class="w-full bg-gray-100 px-4 py-2 rounded-lg" style="outline: 1px solid green;" type="text" name="alamat" id="alamat" placeholder="Tulis Disini..." />
     </div>
     <div>
-        <label class="text-gray-800 font-semibold block my-3 text-md" for="email">Alamat Email :</label>
-        <input class="w-full bg-gray-100 px-4 py-2 rounded-lg" style="outline: 1px solid green;" type="text" name="email" id="email" placeholder="Tulis Disini..." />
+
+     <!-- Email Address -->
+        <x-input-label class="text-gray-800 font-semibold block my-3 text-md" for="email" :value="__('Alamat Email :')"></x-input-label>
+        <x-text-input id="email" class="w-full bg-gray-100 px-4 py-2 rounded-lg" style="outline: 1px solid green;" type="email" name="email" :value="old('email')" required autocomplete="username" placeholder="Tulis Disini..." />
+        <x-input-error :messages="$errors->get('email')" class="mt-2" />
     </div>
     <div>
-        <label class="text-gray-800 font-semibold block my-3 text-md" for="password">Password :</label>
-        <input class="w-full bg-gray-100 px-4 py-2 rounded-lg" style="outline: 1px solid green;" type="text" name="password" id="password" placeholder="Konfirmasi Kata Sandi" />
-    </div>
-    <div>
-        <label class="text-gray-800 font-semibold block my-3 text-md" for="confirm">Confirm password :</label>
-        <input class="w-full bg-gray-100 px-4 py-2 rounded-lg" style="outline: 1px solid green;" type="text" name="confirm" id="confirm" placeholder="confirm password" />
-    </div>
+
+        <!-- Password -->
+    <div class="text-gray-800 block my-3 text-md">
+            <x-input-label  for="password" :value="__('Password :')" />
+            <x-text-input class="w-full bg-gray-100 px-4 py-2 rounded-lg" style="outline: 1px solid green;" id="password" placeholder="Tulis Kata Sandi"
+                            type="password"
+                            name="password"
+                            required autocomplete="new-password" />
+
+            <x-input-error :messages="$errors->get('password')" class="mt-2" />
+        </div>
+<!-- Confirm Password -->
+        <div class="text-gray-800  block my-3 text-md">
+            <x-input-label for="password_confirmation" :value="__('Konfirmasi Password :')" />
+
+            <x-text-input id="password_confirmation" class="w-full bg-gray-100 px-4 py-2 rounded-lg" style="outline: 1px solid green;" 
+                            type="password"
+                            name="password_confirmation" required autocomplete="new-password" placeholder="Konfirmasi Password"/>
+
+            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+        </div>
+   
     <div>
         <label class="text-gray-800 font-semibold block my-3 text-md" for="logo_bisnis">Logo Bisnis :</label>
         <input class="w-full bg-gray-100 px-4 py-2 rounded-lg" style="outline: 1px solid green;" type="file" name="logo_bisnis" id="logo_bisnis" accept="image/*" />
