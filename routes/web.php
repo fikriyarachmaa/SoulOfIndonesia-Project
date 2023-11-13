@@ -4,7 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdukBatikController;
 use App\Http\Controllers\artikelBatikController;
-
+use App\Http\Controllers\rekomWisataController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -100,6 +100,9 @@ Route::get('/admin.regis', function () {
 });
 Route::get('/admin/artikel', [artikelBatikController::class, 'create'])->name('admin.artikel.create');
 Route::post('/admin/artikel', [artikelBatikController::class, 'store'])->name('admin.artikel.store');
+
+Route::get('/admin/rekomendasiWisata', [rekomWisataController::class, 'create'])->name('admin.rekomendasiWisata.create');
+Route::post('/admin/rekomendasiWisata', [rekomWisataController::class, 'store'])->name('admin.rekomendasiWisata.store');
 /*ADMIN ROUTE*/
 
 Route::get('/rekom/rekomwisata', function () {

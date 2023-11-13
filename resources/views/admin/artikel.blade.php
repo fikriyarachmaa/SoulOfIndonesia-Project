@@ -100,6 +100,7 @@
         </div> 
         <!-- Main modal end -->
 
+        <!-- tabel start -->
             <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">      
                 <div class="p-4">
 			        <label for="table-search" class="sr-only">Search</label>
@@ -131,51 +132,23 @@
                     </tr>
                     </thead>
                 <tbody>
+                @foreach ($articles as $artikel)
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            1001
+                            {{ $artikel->id }}
                         </th>
                             <td class="px-6 py-4">
-                                Batik Jamu Gendong Motif Tejo
+                            {{ $artikel->judul }}
                             </td>
                             <td class="px-6 py-4">
-                                26 November 2023
+                                {{ $artikel->timestamps }}
                             </td>
                             <td class="pr-10 py-4 text-right">
                                 <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                                 <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Hapus</a>
                             </td>
                     </tr>
-                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            1002
-                        </th>
-                            <td class="px-6 py-4">
-                                Batik Mega Mendung
-                            </td>
-                            <td class="px-6 py-4">
-                                28 November 2023
-                            </td>
-                            <td class="pr-10 py-4 text-right">
-                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Hapus</a>
-                            </td>
-                    </tr>
-                    <tr class="bg-white dark:bg-gray-800">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            1003
-                        </th>
-                            <td class="px-6 py-4">
-                                Batik Parang
-                            </td>
-                            <td class="px-6 py-4">
-                                30 November 2023
-                            </td>
-                            <td class="pr-10 py-4 text-right">
-                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Hapus</a>
-                            </td>
-                    </tr>
+                @endforeach
                 </tbody>
             </table>
         </div>
