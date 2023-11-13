@@ -17,7 +17,7 @@ class rekomWisataController extends Controller
     {
         $rekom = RekomWisata::find($id);
        // $articles->judul = str_replace("\n", "<br>", $articles->judul);
-        return view('/rekom/kampungkauman', [
+        return view('/rekom/wisataDetails', [
             //'title' => 'Article Details',
         ], compact(['rekom']));
     }

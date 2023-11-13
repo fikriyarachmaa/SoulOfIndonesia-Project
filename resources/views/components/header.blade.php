@@ -31,7 +31,7 @@
                             <a href="/galeribatik/galeribatik" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Galeri Batik</a>
                         </li>
                         <li class="group">
-                            <a href="/rekom/rekomwisata" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Rekomendasi Wisata</a>
+                            <a href="/rekom/rekomendasiWisata" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Rekomendasi Wisata</a>
                         </li>
                         <li class="group">
                             <a href="/batikshop/batikshop" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Batik Shop</a>
