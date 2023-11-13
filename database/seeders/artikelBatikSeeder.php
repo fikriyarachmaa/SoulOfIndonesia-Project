@@ -4,40 +4,26 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-
-<<<<<<< HEAD
-=======
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
->>>>>>> 1b97b0f13bff9ae022fd0fe6430b30a73be398e9
-class artikelBatikSeeder extends Seeder
+class ArtikelBatikSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-<<<<<<< HEAD
-        DB::table('produk_batik')->insert([
-=======
         DB::table('artikel_batik')->insert([
->>>>>>> 1b97b0f13bff9ae022fd0fe6430b30a73be398e9
-            'judul'          => 'Batik Jamu Gendong Motif Tejo',
-            'foto'          => '/img/jamugendong.png',
-            'opening'          => 'Batik Jamu Gendong atau Batik Mbok Jamu adalah salah satu motif batik tradisional Indonesia yang menggambarkan seorang wanita yang membawa keranjang atau gendongan berisi ramuan jamu tradisional.',
-            'asal_usul'          => 'Asal-usul motif Batik Jamu Gendong tidak terlalu jelas, tetapi motif ini memiliki akar dalam budaya Jawa, terutama di Jawa Tengah dan Jawa Timur, yang merupakan daerah yang kaya akan tradisi jamu. Sebagian besar produksi Batik Jamu Gendong dapat ditemukan di berbagai daerah di Jawa, yang dikenal karena warisan seni batiknya.',
-            'filosofi'          => 'Motif Batik Jamu Gendong atau Batik Mbok Jamu memiliki filosofi yang dalam yang mencerminkan berbagai nilai dan aspek budaya Indonesia, antara lain:
+            'judul'     => 'Batik Jamu Gendong Motif Tejo',
+            'foto'      => '/img/jamugendong.png',
+            'opening'   => 'Batik Jamu Gendong atau Batik Mbok Jamu adalah salah satu motif batik tradisional Indonesia yang menggambarkan seorang wanita yang membawa keranjang atau gendongan berisi ramuan jamu tradisional.',
+            'asal_usul' => 'Asal-usul motif Batik Jamu Gendong tidak terlalu jelas, tetapi motif ini memiliki akar dalam budaya Jawa, terutama di Jawa Tengah dan Jawa Timur, yang merupakan daerah yang kaya akan tradisi jamu. Sebagian besar produksi Batik Jamu Gendong dapat ditemukan di berbagai daerah di Jawa, yang dikenal karena warisan seni batiknya.',
+            'filosofi'  => 'Motif Batik Jamu Gendong atau Batik Mbok Jamu memiliki filosofi yang dalam yang mencerminkan berbagai nilai dan aspek budaya Indonesia, antara lain:
                 1. Kesehatan dan Kesejahteraan: Motif ini menggambarkan seorang wanita penjual jamu yang membawa ramuan tradisional untuk kesehatan dan kesejahteraan masyarakat. Ini mencerminkan perhatian terhadap kesehatan dan kebahagiaan anggota masyarakat.
                 2. Tradisi dan Warisan: Batik Jamu Gendong mengingatkan kita akan pentingnya menjaga dan merawat tradisi dan warisan budaya, termasuk penggunaan jamu sebagai metode pengobatan tradisional yang telah ada selama berabad-abad.
-                3. Kerja Keras dan Kreativitas: Motif ini mencerminkan kerja keras para penjual jamu yang sering kali berjalan berkeliling untuk mencari pembeli. Hal ini mengingatkan kita akan nilai-nilai kerja keras, ketekunan, dan kreativitas dalam menjalankan usaha kecil dan menopang kehidupan.
-<<<<<<< HEAD
-                ',
-            
-
-=======
-                4. Keseimbangan Alam dan Manusia: Seperti banyak motif batik lainnya, Batik Jamu Gendong juga menggambarkan keseimbangan antara manusia dan alam. Penggunaan bahan alami dalam ramuan jamu menunjukkan rasa hormat terhadap alam dan hubungan harmonis antara manusia dan lingkungannya',
+                3. Kerja Keras dan Kreativitas: Motif ini mencerminkan kerja keras para penjual jamu yang sering kali berjalan berkeliling untuk mencari pembeli. Hal ini mengingatkan kita akan nilai-nilai kerja keras, ketekunan, dan kreativitas dalam menjalankan usaha kecil dan menopang kehidupan.',
         ]);
 
         DB::table('artikel_batik')->insert([
@@ -86,7 +72,8 @@ class artikelBatikSeeder extends Seeder
             Perlambangan Kelompok Sosial: Motif Batik Kalimantan juga dapat mencerminkan identitas kelompok sosial atau komunitas Dayak tertentu. Ini bisa menjadi bentuk pengenalan diri dan identitas budaya.
             
             Pewarisan Budaya: Batik Kalimantan tidak hanya sekadar pakaian atau kain hiasan, melainkan juga merupakan sarana untuk melestarikan dan mewariskan nilai-nilai budaya dari generasi ke generasi',
->>>>>>> 1b97b0f13bff9ae022fd0fe6430b30a73be398e9
         ]);
+
+        
     }
 }
