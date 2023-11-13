@@ -45,6 +45,9 @@ Route::get('/batikshop/batikshop', [ProdukBatikController::class, 'index'])->nam
 Route::get('/components/header', function () {
     return view('components/header');
 });
+Route::get('/components/headerprofile', function () {
+    return view('components/headerprofile');
+});
 Route::get('/components/footer', function () {
     return view('components/footer');
 });
@@ -57,26 +60,14 @@ Route::get('/galeribatik/articleDetails', function () {
 
 Route::get('/galeribatik/{id}', [artikelBatikController::class, 'show_details'])->name('articles');
 
-Route::get('/auth/loginuser', function () {
-    return view('auth/loginuser');
-});
-Route::get('/auth/loginadmin', function () {
-    return view('auth/loginadmin');
-});
-
-
-Route::get('/auth/loginuser', function () {
-    return view('auth/loginuser');
-});
-Route::get('/auth/loginadmin', function () {
-    return view('auth/loginadmin');
-});
+/*AUTH ROUTE*/
 Route::get('/auth/login', function () {
     return view('auth/login');
 });
 Route::get('/auth/regis1', function () {
     return view('auth/regis1');
 });
+
 
 
 /*ADMIN ROUTE*/
@@ -98,11 +89,6 @@ Route::get('/admin/produk', function () {
 Route::get('/admin.regis', function () {
     return view('admin/regis');
 });
-Route::get('/admin/artikel', [artikelBatikController::class, 'create'])->name('admin.artikel.create');
-Route::post('/admin/artikel', [artikelBatikController::class, 'store'])->name('admin.artikel.store');
-
-Route::get('/admin/rekomendasiWisata', [rekomWisataController::class, 'create'])->name('admin.rekomendasiWisata.create');
-Route::post('/admin/rekomendasiWisata', [rekomWisataController::class, 'store'])->name('admin.rekomendasiWisata.store');
 /*ADMIN ROUTE*/
 
 /*rekom ROUTE*/

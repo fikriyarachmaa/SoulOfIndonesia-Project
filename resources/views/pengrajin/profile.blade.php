@@ -36,15 +36,15 @@
             <form>
                 <div class="mb-2">
                     <label for="nama" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Nama</label>
-                    <input type="nama" id="nama" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light" placeholder="Jefri Nichol" required>
+                    <input type="nama" id="nama" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Jefri Nichol" required>
                 </div>
                 <div class="mb-2">
                     <label for="email" class="block mb-2 text-sm font-medium text-green-dark">Email</label>
-                    <input type="email" id="email" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light" placeholder="jefrinichol@gmail.com" required>
+                    <input type="email" id="email" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="jefrinichol@gmail.com" required>
                 </div>
                 <div class="mb-3">
                     <label for="gender" class="block mb-2 text-sm font-medium text-green-dark">Jenis Kelamin</label>
-                    <select class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light" 
+                    <select class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                             value={selectedValue} onChange={handleSelectChange}>
                         {genre.map((item, i) => (
                             <option value={item} key={i}>
@@ -56,7 +56,7 @@
                         ))}
                     </select>
                 </div>
-                    <button type="submit" class="mb-2 text-white bg-yellow hover:bg-green-dark focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full sm:w-auto px-5 py-2.5 text-center">Simpan</button>
+                    <button type="submit" class="mb-2 text-white bg-green-dark hover:bg-yellow focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full sm:w-auto px-5 py-2.5 text-center">Simpan</button>
             </form>
             <!-- garis batas -->
             <div class="bg-green-light h-px mt-2"></div>
@@ -65,17 +65,17 @@
             <form>
                 <div class="mb-2">
                     <label for="passwordnow" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Password sekarang</label>
-                    <input type="passwordnow" id="passwordnow" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light" placeholder="" required>
+                    <input type="passwordnow" id="passwordnow" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
                 </div>
                 <div class="mb-2">
                     <label for="passwordnew" class="block mb-2 text-sm font-medium text-green-dark">Password baru</label>
-                    <input type="passwordnew" id="passwordnew" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light" placeholder="" required>
+                    <input type="passwordnew" id="passwordnew" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
                 </div>
                 <div class="mb-3">
                 <label for="confirmpass" class="block mb-2 text-sm font-medium text-green-dark">Konfirmasi password</label>
-                    <input type="confirmpass" id="passwordnew" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light" placeholder="" required>
+                    <input type="confirmpass" id="passwordnew" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
                 </div>
-                    <button type="submit" class="mb-2 text-white bg-yellow hover:bg-green-dark focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full sm:w-auto px-5 py-2.5 text-center">Ubah password</button>
+                    <button type="submit" class="mb-2 text-white bg-green-dark hover:bg-yellow focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full sm:w-auto px-5 py-2.5 text-center">Ubah password</button>
             </form>
             </div>
             </div>
