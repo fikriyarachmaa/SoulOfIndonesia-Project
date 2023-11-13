@@ -1,3 +1,5 @@
+component header
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +39,7 @@
                             <a href="/batikshop/batikshop" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Batik Shop</a>
                         </li>
                         <li class="group">
-                            <a href="/auth/login" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Login</a>
+                            <a href="/pengrajin/biodata" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Profile</a>
                         </li>
                     </ul>
                 </nav>
