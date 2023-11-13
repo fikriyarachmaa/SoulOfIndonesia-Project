@@ -98,6 +98,8 @@ Route::get('/admin/produk', function () {
 Route::get('/admin.regis', function () {
     return view('admin/regis');
 });
+Route::get('/admin/artikel', [artikelBatikController::class, 'create'])->name('admin.artikel.create');
+Route::post('/admin/artikel', [artikelBatikController::class, 'store'])->name('admin.artikel.store');
 /*ADMIN ROUTE*/
 
 Route::get('/rekom/rekomwisata', function () {
