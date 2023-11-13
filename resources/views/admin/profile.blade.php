@@ -32,7 +32,7 @@
             <!-- kolom edit profile start -->
             <div class="flex flex-col justify-start items-center">
             <div class="bg-white p-4 rounded-md shadow m-4 w-96">
-            <p class="text-black text-2xl font-semibold pb-1 text-left">Edit Profile</p>           
+            <p class="text-green-dark text-2xl font-semibold pb-1 text-left">Edit Profile</p>           
             <form>
                 <div class="mb-2">
                     <label for="nama" class="pt-2 block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
@@ -56,7 +56,7 @@
                         ))}
                     </select>
                 </div>
-                    <button type="submit" class="mb-2 text-white bg-yellow hover:bg-amber-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Simpan</button>
+                    <button type="submit" class="mb-2 text-white bg-green-dark hover:bg-yellow focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full sm:w-auto px-5 py-2.5 text-center">Simpan</button>
             </form>
             <!-- garis batas -->
             <div class="bg-green-light h-px mt-2"></div>
@@ -75,7 +75,7 @@
                 <label for="confirmpass" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Konfirmasi password</label>
                     <input type="confirmpass" id="passwordnew" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
                 </div>
-                    <button type="submit" class="mb-2 text-white bg-yellow hover:bg-amber-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ubah password</button>
+                    <button type="submit" class="mb-2 text-white bg-green-dark hover:bg-yellow focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full sm:w-auto px-5 py-2.5 text-center">Ubah password</button>
             </form>
             </div>
             </div>
@@ -91,7 +91,7 @@
                     </div>
                 </div> 
                 <div class="mt-16 flex flex-col items-center">
-                    <h4 class="text-xl font-bold text-navy-700 dark:text-white">
+                    <h4 class="text-xl font-bold text-gray-600 dark:text-white">
                     Adela Parkson
                     </h4>
                     <p class="text-base font-normal text-gray-600">Tim Admin</p>

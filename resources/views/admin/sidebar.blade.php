@@ -8,27 +8,27 @@
 </head>
 <body>
     <!-- sidebar start -->
-    <div class="p-2 bg-white shadow h-full w-60 flex flex-col hidden md:flex" id="sideNav">
+    <div class="p-2 bg-green-pastel shadow h-full w-60 flex flex-col hidden md:flex" id="sideNav">
             <nav>
-                <a class="block text-gray-500 py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/admin/admin">
+                <a class="block text-green-dark py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/admin/admin">
                     <i class="fas fa-home mr-2"></i>Dashboard
                 </a>
-                <a class="block text-gray-500 py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/admin/profile">
+                <a class="block text-green-dark py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/admin/profile">
                     <i class="fas fa-file-alt mr-2"></i>Profile
                 </a>
-                <a class="block text-gray-500 py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/admin/artikel">
+                <a class="block text-green-dark py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/admin/artikel">
                     <i class="fas fa-users mr-2"></i>Artikel
                 </a>
-                <a class="block text-gray-500 py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/admin/rekomendasiWisata">
+                <a class="block text-green-dark py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/admin/rekomendasiWisata">
                     <i class="fas fa-store mr-2"></i>Rekomendasi Wisata
                 </a>
-                <a class="block text-gray-500 py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/admin/produk">
+                <a class="block text-green-dark py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/admin/produk">
                     <i class="fas fa-exchange-alt mr-2"></i>Produk
                 </a>
             </nav>
 
             <!-- logout start -->
-            <a class="block text-gray-500 py-2.5 px-4 my-2 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white mt-auto" href="#">
+            <a class="block text-green-dark py-2.5 px-4 my-2 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white mt-auto" href="#">
                 <i class="fas fa-sign-out-alt mr-2"></i>Log out
             </a>
                 <!-- garis batas -->

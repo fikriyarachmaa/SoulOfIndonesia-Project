@@ -23,7 +23,7 @@
 </head>
 <body>
 <!-- div awal -->
-<div class="flex flex-col h-screen bg-gray-100">
+<div class="flex flex-col h-screen bg-cream">
     @include('admin.navbar')
     <!-- isi start -->
     <div class="flex-1 flex">
@@ -37,7 +37,7 @@
                     </h2>
                 </div>
                 <div class="flex justify-end pr-4">
-                <button id="defaultModalButton"data-modal-target="crud-modal" data-modal-toggle="crud-modal" type="button" class="flex items-center w-auto px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                <button id="defaultModalButton"data-modal-target="crud-modal" data-modal-toggle="crud-modal" type="button" class="flex items-center w-auto px-5 py-2 text-sm tracking-wide text-white bg-yellow border-gray-300 rounded-lg hover:bg-green-dark hover:text-cream">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
@@ -115,7 +115,7 @@
 				        </div>
 				            <input type="text" id="table-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-80 pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search by title">
                 </div>
-                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <thead class="text-xs text-white uppercase bg-yellow">
                     <tr>
                         <th scope="col" class="px-6 py-3">
                             ID
@@ -153,7 +153,7 @@
             </table>
         </div>
                 <div class="flex justify-end pr-10">
-                    <a href="#" class="flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                    <a href="#" class="flex items-center justify-center px-4 h-10 text-base font-medium text-white bg-yellow border-gray-300 rounded-lg hover:bg-green-dark hover:text-cream">
                         Next
                         <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
