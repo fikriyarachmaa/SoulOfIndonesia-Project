@@ -26,5 +26,7 @@ class ProdukBatikSeeder extends Seeder
             'foto'          => '/img/batiksoganparang.png',
             'kontak_penjual'  => 'https://www.instagram.com/fikriyarachmaa/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==',
         ]);
+
+        
     }
 }

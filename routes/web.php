@@ -4,7 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdukBatikController;
 use App\Http\Controllers\artikelBatikController;
-
+use App\Http\Controllers\rekomWisataController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -89,7 +89,6 @@ Route::get('/admin/produk', function () {
 Route::get('/admin.regis', function () {
     return view('admin/regis');
 });
-
 /*ADMIN ROUTE*/
 
 Route::get('/rekom/rekomwisata', function () {

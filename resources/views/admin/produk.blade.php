@@ -22,7 +22,7 @@
 </head>
 <body>
 <!-- div awal -->
-<div class="flex flex-col h-screen bg-gray-100">
+<div class="flex flex-col h-screen bg-cream">
     @include('admin.navbar')
     <!-- isi start -->
     <div class="flex-1 flex">
@@ -31,13 +31,13 @@
             <div class="m-10 relative overflow-x-auto shadow-md sm:rounded-lg w-400">  
             <div class="grid grid-cols-1 items-center bg-white dark:text-white dark:bg-gray-800">
                 <div>
-                    <h2 class="p-5 text-xl font-semibold text-left text-gray-900">
+                    <h2 class="p-5 text-xl font-semibold text-left text-yellow">
                         Produk
                     </h2>
                 </div>
             </div>   
             <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <thead class="text-xs text-white uppercase bg-yellow">
             <tr>
                 <th scope="col" class="px-6 py-3">
                     <span class="sr-only">Image</span>
@@ -58,10 +58,10 @@
                 <td class="w-20 p-4">
                     <img src="/img/blousesandra.png" alt="blousesandra">
                 </td>
-                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                <td class="px-6 py-4 font-medium text-green-darkest whitespace-nowrap">
                     Apple Watch
                 </td>
-                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                <td class="px-6 py-4 font-medium text-green-darkest whitespace-nowrap">
                     $599
                 </td>
                 <td class="px-6 py-4">
@@ -73,10 +73,10 @@
             <td class="w-20 p-4">
                     <img src="/img/blousesandra.png" alt="blousesandra">
                 </td>
-                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                <td class="px-6 py-4 font-medium text-green-darkest whitespace-nowrap">
                     Apple Watch
                 </td>
-                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                <td class="px-6 py-4 font-medium text-green-darkest whitespace-nowrap">
                     $599
                 </td>
                 <td class="px-6 py-4">
@@ -88,10 +88,10 @@
             <td class="w-20 p-4">
                     <img src="/img/blousesandra.png" alt="blousesandra">
                 </td>
-                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                <td class="px-6 py-4 font-medium text-green-darkest whitespace-nowrap">
                     Apple Watch
                 </td>
-                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                <td class="px-6 py-4 font-medium text-green-darkest whitespace-nowrap">
                     $599
                 </td>
                 <td class="px-6 py-4">
@@ -103,7 +103,7 @@
     </table>
         </div>
                 <div class="flex justify-end pr-10">
-                    <a href="#" class="flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                    <a href="#" class="flex items-center justify-center px-4 h-10 text-base font-medium text-white bg-yellow border-gray-300 rounded-lg hover:bg-green-dark hover:text-cream">
                         Next
                         <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
