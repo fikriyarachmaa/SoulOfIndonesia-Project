@@ -42,18 +42,17 @@
             <div class="flex flex-wrap">
             @foreach ($articles as $artikel)
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/4">
-               
-                    <div class="bg-cream rounded-xl overflow-hidden shadow-lg mb-10 ">
-                        <img src="{{ $artikel->foto }}" alt="batik mega mendung" class="w-full">
-                        <div class="py-8 px-6">
-                            <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">{{ $artikel->judul }}</h3>
-                            <div class="text-center">
-                                <a href="/galeribatik/{{ $artikel->id }}" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                    <div class="bg-cream rounded-xl overflow-hidden shadow-lg mb-10">
+                        <img src="{{ asset($artikel->foto) }}" alt="{{ $artikel->judul }}" class="w-full">
+                            <div class="py-8 px-6">
+                                <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">{{ $artikel->judul }}</h3>
+                                <div class="text-center">
+                                    <a href="/galeribatik/{{ $artikel->id }}" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
-                @endforeach
+            @endforeach
             </div>
     
             <div class="w-full px-4 flex items-center justify-center">

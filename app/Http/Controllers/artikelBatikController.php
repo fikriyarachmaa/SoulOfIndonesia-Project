@@ -21,4 +21,27 @@ class artikelBatikController extends Controller
             //'title' => 'Article Details',
         ], compact(['articles']));
     }
+    public function create()
+    {
+        $articles = artikelBatik::all();
+        return view('admin.artikel', compact('articles'));
+    }
+    public function store(Request $request)
+    {
+        // Validation can be added here if needed
+        $article = new artikelBatik;
+        $article->judul = $request->judul;
+        $article->opening = $request->opening;
+        $article->asal_usul = $request->asal_usul;
+        $article->filosofi = $request->filosofi;
+
+        // Handle file upload (you may want to customize this based on your needs)
+        $file = $request->file('foto');
+        $path = $file->storeAs('public/img', $file->getClientOriginalName());
+        $article->foto = 'storage/img/' . $file->getClientOriginalName();
+
+        $article->save();
+
+        return redirect('/admin/artikel')->with('success', 'Article added successfully');
+    }
 }
