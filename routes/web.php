@@ -83,11 +83,8 @@ Route::get('/auth/loginadmin', function () {
 Route::get('/auth/login', function () {
     return view('auth/login');
 });
-<<<<<<< HEAD
+
 Route::get('/auth/regis', function () {
-=======
-Route::get('/auth/regis1', function () {
->>>>>>> d76c12721d601f7e28eb9b2b3af63dbe69175630
     return view('auth/regis1');
 });
 
