@@ -54,9 +54,6 @@ Route::get('/batikshop/batikshop', [ProdukBatikController::class, 'index'])->nam
 Route::get('/components/header', function () {
     return view('components/header');
 });
-Route::get('/components/headerprofile', function () {
-    return view('components/headerprofile');
-});
 Route::get('/components/footer', function () {
     return view('components/footer');
 });
@@ -69,14 +66,30 @@ Route::get('/galeribatik/articleDetails', function () {
 
 Route::get('/galeribatik/{id}', [artikelBatikController::class, 'show_details'])->name('articles');
 
-/*AUTH ROUTE*/
+Route::get('/auth/loginuser', function () {
+    return view('auth/loginuser');
+});
+Route::get('/auth/loginadmin', function () {
+    return view('auth/loginadmin');
+});
+
+
+Route::get('/auth/loginuser', function () {
+    return view('auth/loginuser');
+});
+Route::get('/auth/loginadmin', function () {
+    return view('auth/loginadmin');
+});
 Route::get('/auth/login', function () {
     return view('auth/login');
 });
+<<<<<<< HEAD
 Route::get('/auth/regis', function () {
+=======
+Route::get('/auth/regis1', function () {
+>>>>>>> d76c12721d601f7e28eb9b2b3af63dbe69175630
     return view('auth/regis1');
 });
-
 
 
 /*ADMIN ROUTE*/
@@ -98,17 +111,30 @@ Route::get('/admin/produk', function () {
 Route::get('/admin.regis', function () {
     return view('admin/regis');
 });
+Route::get('/admin/artikel', [artikelBatikController::class, 'create'])->name('admin.artikel.create');
+Route::post('/admin/artikel', [artikelBatikController::class, 'store'])->name('admin.artikel.store');
+
+Route::get('/admin/rekomendasiWisata', [rekomWisataController::class, 'create'])->name('admin.rekomendasiWisata.create');
+Route::post('/admin/rekomendasiWisata', [rekomWisataController::class, 'store'])->name('admin.rekomendasiWisata.store');
 /*ADMIN ROUTE*/
 
-Route::get('/rekom/rekomwisata', function () {
+/*rekom ROUTE*/
+Route::get('/rekom/rekomendasiWisata', [rekomWisataController::class, 'index'])->name('rekom');
+
+Route::get('/rekom/wisataDetails', function () {
+    return view('/rekom/wisataDetails');
+  })->name('rekom');
+
+Route::get('/rekom/{id}', [rekomWisataController::class, 'show_details'])->name('rekom');
+
+/*
+Route::get('/rekom/rekomendasiWisata', function () {
     return view('rekom/rekomendasiWisata');
 });
-Route::get('/galeribatik/batikjamugendong', function () {
-    return view('galeribatik/batikjamugendong');
-});
-Route::get('/rekom/kampungkauman', function () {
-    return view('rekom/kampungkauman');
-});
+Route::get('/rekom/wisataDetails', function () {
+    return view('rekom/wisataDetails');
+}); */
+/*rekom ROUTE*/
 
 /*PENGRAJIN ROUTE*/
 Route::get('/pengrajin/pengrajin', function () {
