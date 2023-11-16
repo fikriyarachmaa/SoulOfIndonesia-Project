@@ -37,7 +37,7 @@
                             <a href="/batikshop/batikshop" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Batik Shop</a>
                         </li>
                         <li class="group">
-                            <a href="/pengrajin/biodata" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Profile</a>
+                            <a href="/pengrajin/pengrajin" class="text-base font-semibold text-green-darkest py-2 mx-8 flex group-hover:text-cream">Profile</a>
                         </li>
                     </ul>
                 </nav>
@@ -48,4 +48,4 @@
 <!-- Header End -->
 <script src="/js/script.js"></script>
 </body>
-</html>
+</html> 

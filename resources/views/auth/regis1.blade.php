@@ -65,7 +65,7 @@
         </div>
    
     <div>
-        <label class="text-gray-800 font-semibold block my-3 text-md" for="logo_bisnis">Logo Bisnis :</label>
+        <label class="text-gray-800 font-semibold block my-3 text-md" for="logo_bisnis">Foto Profil :</label>
         <input class="w-full bg-gray-100 px-4 py-2 rounded-lg" style="outline: 1px solid green;" type="file" name="logo_bisnis" id="logo_bisnis" accept="image/*" />
     </div>
       

@@ -22,9 +22,13 @@
             </nav>
 
             <!-- logout start -->
-            <a class="block text-green-dark py-2.5 px-4 my-2 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white mt-auto" href="#">
+            <a class="block text-green-dark py-2.5 px-4 my-2 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white mt-auto" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 <i class="fas fa-sign-out-alt mr-2"></i>Log out
             </a>
+
+            <form id="logout-form" method="POST" action="{{ route('logout') }}" style="display: none;">
+                 @csrf
+            </form>
                 <!-- garis batas -->
                 <div class="bg-gradient-to-r from-cyan-300 to-cyan-500 h-px mt-2"></div>
                 <!-- Copyright start -->
