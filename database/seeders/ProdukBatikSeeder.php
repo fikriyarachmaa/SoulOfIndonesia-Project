@@ -18,13 +18,30 @@ class ProdukBatikSeeder extends Seeder
     {
         DB::table('produk_batik')->insert([
             'nama'          => 'Kain Batik Sogan Parang',
+            'kategori'      => 'Kain',
             'harga'         => '125000',
             'kota'          => 'Solo',
+            'stok'          => '20',
             'deskripsi'     => 'Batik Sogan Parang berasal dari Jawa, Indonesia, dan merupakan salah satu motif batik yang paling ikonik dan dihormati dalam tradisi batik Jawa. 
                                 Kain batik Sogan Parang berkualitas tinggi, terbuat dari bahan yang nyaman dipakai dan mudah dirawat.
                                 Cocok untuk busana, aksesoris, kerajinan, hiasan dinding, dan banyak lagi.',
             'foto'          => '/img/batiksoganparang.png',
             'kontak_penjual'  => 'https://www.instagram.com/fikriyarachmaa/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==',
+            'status'        => 'pending',
+        ]);
+
+        DB::table('produk_batik')->insert([
+            'nama'          => 'Kain Batik Kauman',
+            'kategori'      => 'Kain',
+            'harga'         => '125000',
+            'stok'          => '20',
+            'kota'          => 'Solo',
+            'deskripsi'     => 'Batik Kauman berasal dari Jawa, Indonesia, dan merupakan salah satu motif batik yang paling ikonik dan dihormati dalam tradisi batik Jawa. 
+                                Kain batik Sogan Parang berkualitas tinggi, terbuat dari bahan yang nyaman dipakai dan mudah dirawat.
+                                Cocok untuk busana, aksesoris, kerajinan, hiasan dinding, dan banyak lagi.',
+            'foto'          => '/img/batiksoganparang.png',
+            'kontak_penjual'  => 'https://www.instagram.com/fikriyarachmaa/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==',
+            'status'        => 'approve',
         ]);
 
         

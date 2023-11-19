@@ -9,5 +9,5 @@ class ProdukBatik extends Model
 {
     protected $table = 'produk_batik';
     protected $fillable = [
-        'nama', 'kategori', 'harga', 'kota', 'deskripsi', 'foto', 'kontak_penjual'];
+        'nama', 'kategori', 'harga', 'stok', 'kota', 'deskripsi', 'foto', 'kontak_penjual'];
 }

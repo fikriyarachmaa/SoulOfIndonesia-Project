@@ -154,6 +154,9 @@ Route::get('/pengrajin/biodata', function () {
 Route::get('/pengrajin/produk', function () {
     return view('pengrajin/produk');
 });
+Route::get('/pengrajin/produk', [ProdukBatikController::class, 'create'])->name('pengrajin.produk.create');
+Route::post('/pengrajin/produk', [ProdukBatikController::class, 'store'])->name('pengrajin.produk.store');
+
 /*PENGRAJIN ROUTE*/
 
 require __DIR__.'/auth.php';

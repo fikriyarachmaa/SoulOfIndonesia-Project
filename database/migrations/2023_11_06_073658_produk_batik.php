@@ -15,11 +15,13 @@ return new class extends Migration
             $table->id();
             $table->string('nama',255);
             $table->string('kategori')->nullable();
+            $table->bigInteger('stok')->nullable();
             $table->bigInteger('harga')->nullable();
             $table->string('kota')->nullable();
             $table->text('deskripsi')->nullable();
             $table->binary('foto')->nullable();
             $table->string('kontak_penjual')->nullable();
+            $table->enum('status', ['pending', 'approve', 'not approve'])->default('pending');
             $table->timestamps();
         });
     }
