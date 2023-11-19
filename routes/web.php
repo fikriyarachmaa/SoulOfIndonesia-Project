@@ -118,6 +118,9 @@ Route::delete('/admin/artikel/delete/{id}', [artikelBatikController::class, 'des
 
 Route::get('/admin/rekomendasiWisata', [rekomWisataController::class, 'create'])->name('admin.rekomendasiWisata.create');
 Route::post('/admin/rekomendasiWisata', [rekomWisataController::class, 'store'])->name('admin.rekomendasiWisata.store');
+Route::get('/admin/rekomendasiWisata/edit/{id}', [rekomWisataController::class, 'edit'])->name('admin.rekomendasiWisata.edit');
+Route::post('/admin/rekomendasiWisata/update/{id}', [rekomWisataController::class, 'update'])->name('admin.rekomendasiWisata.update');
+Route::delete('/admin/rekomendasiWisata/delete/{id}', [rekomWisataController::class, 'destroy'])->name('admin.rekomendasiWisata.destroy');
 /*ADMIN ROUTE*/
 
 /*rekom ROUTE*/

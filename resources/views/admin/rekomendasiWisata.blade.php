@@ -33,7 +33,7 @@
             <div class="grid grid-cols-2 items-center bg-white dark:text-white dark:bg-gray-800">
                 <div>
                     <h2 class="p-5 text-xl font-semibold text-left text-gray-900">
-                        Artikel
+                        Rekomendasi Wisata
                     </h2>
                 </div>
                 <div class="flex justify-end pr-4">
@@ -54,7 +54,7 @@
                     <!-- Modal header -->
                         <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                                Tambah Artikel Baru
+                                Tambah Rekomendasi Wisata Baru
                             </h3>
                             <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="crud-modal">
                                 <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -144,8 +144,12 @@
                             {{ $rekoms->created_at }}
                             </td>
                             <td class="pr-10 py-4 text-right">
-                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Hapus</a>
+                            <a href="{{ route('admin.rekomendasiWisata.edit', $rekoms->id) }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                <form action="{{ route('admin.rekomendasiWisata.destroy', $rekoms->id) }}" method="POST" style="display: inline;">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="font-medium text-blue-600 dark:text-red-500 hover:underline" onclick="return confirm('Apakah Anda yakin ingin menghapus rekomendasi wisata ini?')">Hapus</button>
+                                </form>
                             </td>
                     </tr>
                 @endforeach
