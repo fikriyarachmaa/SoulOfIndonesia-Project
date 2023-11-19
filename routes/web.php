@@ -62,9 +62,9 @@ Route::get('/galeribatik/galeribatik', [artikelBatikController::class, 'index'])
 
 Route::get('/galeribatik/articleDetails', function () {
     return view('/galeribatik/articleDetails');
-  })->name('articles');
+  })->name('articleDetails');
 
-Route::get('/galeribatik/{id}', [artikelBatikController::class, 'show_details'])->name('articles');
+Route::get('/galeribatik/{id}', [artikelBatikController::class, 'show_details'])->name('articles.show');
 
 Route::get('/auth/loginuser', function () {
     return view('auth/loginuser');
@@ -128,9 +128,9 @@ Route::get('/rekom/rekomendasiWisata', [rekomWisataController::class, 'index'])-
 
 Route::get('/rekom/wisataDetails', function () {
     return view('/rekom/wisataDetails');
-  })->name('rekom');
+  })->name('rekom.details');
 
-Route::get('/rekom/{id}', [rekomWisataController::class, 'show_details'])->name('rekom');
+Route::get('/rekom/{id}', [rekomWisataController::class, 'show_details'])->name('rekom.show');
 
 /*
 Route::get('/rekom/rekomendasiWisata', function () {
@@ -156,7 +156,9 @@ Route::get('/pengrajin/produk', function () {
 });
 Route::get('/pengrajin/produk', [ProdukBatikController::class, 'create'])->name('pengrajin.produk.create');
 Route::post('/pengrajin/produk', [ProdukBatikController::class, 'store'])->name('pengrajin.produk.store');
-
+Route::get('/pengrajin/produk/edit/{id}', [ProdukBatikController::class, 'edit'])->name('pengrajin.produk.edit');
+Route::post('/pengrajin/produk/update/{id}', [ProdukBatikController::class, 'update'])->name('pengrajin.produk.update');
+Route::delete('/pengrajin/produk/delete/{id}', [ProdukBatikController::class, 'destroy'])->name('pengrajin.produk.destroy');
 /*PENGRAJIN ROUTE*/
 
 require __DIR__.'/auth.php';

@@ -163,7 +163,6 @@
                     </thead>
                 <tbody>
                     @foreach($produks as $produk)
-                    @if($produk->status === 'approve')
                     <tr class="bg-white border-b">
                         <th scope="row" class="px-6 py-4 font-medium text-green-darkest whitespace-nowrap">
                             {{ $produk->id }}
@@ -172,17 +171,19 @@
                                 {{ $produk->nama }}
                             </td>
                             <td class="px-6 py-4">
-                                {{ $produk->harga }}
+                                Rp {{ number_format($produk->harga, 0, ',', '.') }}
                             </td>
                             <td class="px-6 py-4">
                                 {{ $produk->stok }}
                             </td>
                             <td class="pr-10 py-4 text-right">
-                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Hapus</a>
-                            </td>
+                                <a href="{{ route('pengrajin.produk.edit', $produk->id) }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                <form action="{{ route('pengrajin.produk.destroy', $produk->id) }}" method="POST" style="display: inline;">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="font-medium text-blue-600 dark:text-red-500 hover:underline" onclick="return confirm('Apakah Anda yakin ingin menghapus Produk ini?')">Hapus</button>
+                                </form>
                     </tr>
-                    @endif
                     @endforeach
                 </tbody>
             </table>
