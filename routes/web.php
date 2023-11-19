@@ -110,6 +110,11 @@ Route::get('/admin.regis', function () {
 });
 Route::get('/admin/artikel', [artikelBatikController::class, 'create'])->name('admin.artikel.create');
 Route::post('/admin/artikel', [artikelBatikController::class, 'store'])->name('admin.artikel.store');
+Route::get('/admin/artikel/edit/{id}', [artikelBatikController::class, 'edit'])->name('admin.artikel.edit');
+Route::post('/admin/artikel/update/{id}', [artikelBatikController::class, 'update'])->name('admin.artikel.update');
+Route::delete('/admin/artikel/delete/{id}', [artikelBatikController::class, 'destroy'])->name('admin.artikel.destroy');
+
+
 
 Route::get('/admin/rekomendasiWisata', [rekomWisataController::class, 'create'])->name('admin.rekomendasiWisata.create');
 Route::post('/admin/rekomendasiWisata', [rekomWisataController::class, 'store'])->name('admin.rekomendasiWisata.store');

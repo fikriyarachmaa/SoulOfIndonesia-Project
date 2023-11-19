@@ -44,4 +44,50 @@ class artikelBatikController extends Controller
 
         return redirect('/admin/artikel')->with('success', 'Article added successfully');
     }
+
+    public function edit($id)
+    {
+        $article = artikelBatik::find($id);
+        return view('admin.editArtikel', compact('article'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        // Validasi request jika diperlukan
+        $request->validate([
+            'judul' => 'required|string',
+            'opening' => 'required|string',
+            'asal_usul' => 'required|string',
+            'filosofi' => 'required|string',
+        ]);
+
+        $article = artikelBatik::find($id);
+        
+        if(!$article) {
+            return redirect('/admin/artikel')->with('error', 'Artikel tidak ditemukan');
+        }
+
+        $article->judul = $request->judul;
+        $article->opening = $request->opening;
+        $article->asal_usul = $request->asal_usul;
+        $article->filosofi = $request->filosofi;
+
+        $article->save();
+
+        return redirect('/admin/artikel')->with('success', 'Artikel berhasil diperbarui');
+    }
+
+    public function destroy($id)
+    {
+        $article = artikelBatik::find($id);
+
+        if(!$article) {
+            return redirect('/admin/artikel')->with('error', 'Artikel tidak ditemukan');
+        }
+
+        $article->delete();
+
+        return redirect('/admin/artikel')->with('success', 'Artikel berhasil dihapus');
+    }
+
 }

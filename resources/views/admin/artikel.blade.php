@@ -145,8 +145,12 @@
                             {{ $artikel->created_at }}
                             </td>
                             <td class="pr-10 py-4 text-right">
-                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Hapus</a>
+                                <a href="{{ route('admin.artikel.edit', $artikel->id) }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                <form action="{{ route('admin.artikel.destroy', $artikel->id) }}" method="POST" style="display: inline;">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="font-medium text-blue-600 dark:text-red-500 hover:underline" onclick="return confirm('Apakah Anda yakin ingin menghapus artikel ini?')">Hapus</button>
+                                </form>
                             </td>
                     </tr>
                 @endforeach
