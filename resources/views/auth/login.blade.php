@@ -52,7 +52,7 @@
               @if (Route::has('password.request'))
                 <a class="text-green-dark text-sm ml-2 hover:text-blue-500 cursor-pointer hover:-translate-y-1 duration-500 transition-all" href="{{ route('password.request') }}"> {{ __('Lupa Kata Sandi?') }}</a>
                 @endif
-                <a href="/auth/regis" class="text-green-dark text-sm ml-2 hover:text-blue-500 cursor-pointer hover:-translate-y-1 duration-500 transition-all">Belum Meliliki Akun</a>
+                <a href="/auth/regis" class="text-green-dark text-sm ml-2 hover:text-blue-500 cursor-pointer hover:-translate-y-1 duration-500 transition-all">Belum Memiliki Akun</a>
               </div>
               
             </form>
