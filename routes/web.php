@@ -29,9 +29,9 @@ Route::get('/dashboard', function () {
 Route::middleware('auth')->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
     Route::get('/pengrajin/dashboard', [PengrajinController::class, 'dashboard'])->name('pengrajin.dashboard');
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/admin/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/admin/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/admin/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
 Route::get('/', function () {
@@ -100,9 +100,6 @@ Route::get('/auth/regis', function () {
 
 
 /*ADMIN ROUTE*/
-Route::get('/admin/profile', function () {
-    return view('admin/profile');
-});
 Route::get('/admin/artikel', function () {
     return view('admin/artikel');
 });
