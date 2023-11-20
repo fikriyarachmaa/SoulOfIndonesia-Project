@@ -57,7 +57,7 @@
             @foreach($produks as $produk)
             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <td class="w-20 p-4">
-                    <img src="{{ $produk->foto }}" alt="blousesandra">
+                    <img src="{{ asset($produk->foto) }}" alt="blousesandra">
                 </td>
                 <td class="px-6 py-4 font-medium text-green-darkest whitespace-nowrap">
                     {{ $produk->nama }}

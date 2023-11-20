@@ -49,6 +49,14 @@ Route::get('/landingpage', function () {
 /*BATIK SHOP ROUTE*/
 
 Route::get('/batikshop/batikshop', [ProdukBatikController::class, 'index'])->name('produks');
+Route::get('/batikshop/showAll', [ProdukBatikController::class, 'showAllProduct'])->name('show_all_product');
+
+Route::get('/batikshop/viewProduk', function () {
+    return view('/batikshop/viewProduk');
+})->name('viewProduk');
+
+Route::get('/batikshop/{id}', [ProdukBatikController::class, 'show_details'])->name('produks.show');
+
 /*BATIK SHOP ROUTE*/
 
 Route::get('/components/header', function () {
@@ -64,7 +72,7 @@ Route::get('/galeribatik/showMore', [artikelBatikController::class, 'showMoreArt
 
 Route::get('/galeribatik/articleDetails', function () {
     return view('/galeribatik/articleDetails');
-  })->name('articleDetails');
+})->name('articleDetails');
 
 Route::get('/galeribatik/{id}', [artikelBatikController::class, 'show_details'])->name('articles.show');
 

@@ -97,14 +97,14 @@
   <h2 class="text-xl font-bold text-gray-900 dark:text-white">Produk Untukmu</h2>
     <div class="flex grid grid-cols gap-8 xl:mt-8 xl:gap-8 md:grid-cols-2 xl:grid-cols-4">
     @foreach ($produks as $produk)
-      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
-        <a href="#" class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="{{ $produk->foto }}">
+      <div class="p-4 w-full bg-cream border border-green-medium border-1 rounded-xl overflow-hidden shadow-lg mb-10">
+        <a href="/batikshop/{{ $produk->id }}" class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="{{ asset($produk->foto) }}">
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">{{ $produk->kategori }}</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">{{ $produk->nama }}</h2>
-          <p class="mt-1">{{ $produk->harga }}</p>
+          <h3 class="text-green-darkest text-xs tracking-widest title-font mb-1">{{ $produk->kategori }}</h3>
+          <h2 class="text-green-medium title-font text-lg font-medium">{{ $produk->nama }}</h2>
+          <p class="mt-1 text-yellow font-medium">Rp {{ $produk->harga }}</p>
         </div>
       </div>
       @endforeach
@@ -114,7 +114,9 @@
 </section>
   <!-- produk -->
   <div class="flex justify-center items-center pb-12 pt-4">
-    <button type="button" class="text-green-dark hover:text-white border-2 border-green-darkest hover:bg-green-light focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">Lihat lainnya</button> 
+    <a href="/batikshop/showAll">
+        <button type="button" class="text-green-dark hover:text-white border-2 border-green-darkest hover:bg-green-light focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">Lihat lainnya</button> 
+    </a>
   </div>
  
 

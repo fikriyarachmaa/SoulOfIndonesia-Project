@@ -13,7 +13,19 @@ class ProdukBatikController extends Controller
         return view('/batikshop/BatikShop', 
            compact(['produks']));
     }
-
+    public function showAllProduct()
+    {
+        $produks = ProdukBatik::all();
+        return view('/batikshop/showAll', compact('produks'));
+    }
+    public function show_details($id)
+    {
+        $produks = ProdukBatik::find($id);
+        // $articles->judul = str_replace("\n", "<br>", $articles->judul);
+         return view('/batikshop/viewProduk', [
+             //'title' => 'Article Details',
+         ], compact(['produks']));
+    }
     public function create()
     {
         $produks = ProdukBatik::where('status', 'approve')->get();
@@ -58,6 +70,7 @@ class ProdukBatikController extends Controller
             'kota' => 'required|string',
             'deskripsi' => 'required|string',
             'kontak_penjual' => 'required|string',
+            'foto' => 'image|mimes:jpeg,png,jpg,gif' // Aturan validasi untuk foto
         ]);
 
         $produks = ProdukBatik::find($id);
@@ -73,6 +86,14 @@ class ProdukBatikController extends Controller
         $produks->kota = $request->kota;
         $produks->deskripsi = $request->deskripsi;
         $produks->kontak_penjual = $request->kontak_penjual;
+
+        // Proses foto jika ada yang diunggah
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $filename = $file->getClientOriginalName();
+            $path = $file->storeAs('public/img', $filename);
+            $produks->foto = 'storage/img/' . $filename;
+        }
 
         $produks->save();
 

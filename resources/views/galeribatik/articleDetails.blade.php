@@ -10,7 +10,7 @@
 <body>
     @include('components.header')
     {{-- Hero Section Start --}}
-    <section id="" class="pt-16 lg:pt-36 bg-cream">
+    <section id="details" class="pt-16 lg:pt-36 bg-cream">
         <div class="container mx-auto px-8">
         @if(isset($articles) && isset($articles->judul))
             <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center pb-16 ">{{ $articles->judul }}</h1>
