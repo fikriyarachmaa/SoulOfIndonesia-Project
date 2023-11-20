@@ -13,7 +13,7 @@ class AdminController extends Controller
     {
         $countArtikel = artikelBatik::all()->count();
         $countRekom = RekomWisata::all()->count();
-        $countProduk = ProdukBatik::where('status', 'pending')->count();
+        $countProduk = ProdukBatik::where('status', 'approve')->count();
 
         return view('admin.admin', compact('countArtikel', 'countRekom', 'countProduk'));
     }
