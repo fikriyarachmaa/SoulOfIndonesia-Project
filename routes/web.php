@@ -60,6 +60,8 @@ Route::get('/components/footer', function () {
 
 Route::get('/galeribatik/galeribatik', [artikelBatikController::class, 'index'])->name('articles');
 
+Route::get('/galeribatik/showMore', [artikelBatikController::class, 'showMoreArticles'])->name('show_more_articles');
+
 Route::get('/galeribatik/articleDetails', function () {
     return view('/galeribatik/articleDetails');
   })->name('articleDetails');
@@ -123,6 +125,8 @@ Route::delete('/admin/rekomendasiWisata/delete/{id}', [rekomWisataController::cl
 
 /*rekom ROUTE*/
 Route::get('/rekom/rekomendasiWisata', [rekomWisataController::class, 'index'])->name('rekom');
+
+Route::get('/rekom/allArticle', [rekomWisataController::class, 'showMoreArticles'])->name('show_all_articles');
 
 Route::get('/rekom/wisataDetails', function () {
     return view('/rekom/wisataDetails');

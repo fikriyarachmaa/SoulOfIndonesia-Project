@@ -13,6 +13,11 @@ class artikelBatikController extends Controller
         return view('/galeribatik/galeribatik', 
            compact(['articles']));
     }
+    public function showMoreArticles()
+    {
+        $articles = artikelBatik::all();
+        return view('/galeribatik/showMore', compact('articles'));
+    }
     public function show_details($id)
     {
         $articles = artikelBatik::find($id);
@@ -59,21 +64,30 @@ class artikelBatikController extends Controller
             'opening' => 'required|string',
             'asal_usul' => 'required|string',
             'filosofi' => 'required|string',
+            'foto' => 'image|mimes:jpeg,png,jpg,gif|max:2048' // Aturan validasi untuk foto
         ]);
-
+    
         $article = artikelBatik::find($id);
         
         if(!$article) {
             return redirect('/admin/artikel')->with('error', 'Artikel tidak ditemukan');
         }
-
+    
         $article->judul = $request->judul;
         $article->opening = $request->opening;
         $article->asal_usul = $request->asal_usul;
         $article->filosofi = $request->filosofi;
-
+    
+        // Proses foto jika ada yang diunggah
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $filename = $file->getClientOriginalName();
+            $path = $file->storeAs('public/img', $filename);
+            $article->foto = 'storage/img/' . $filename;
+        }
+    
         $article->save();
-
+    
         return redirect('/admin/artikel')->with('success', 'Artikel berhasil diperbarui');
     }
 

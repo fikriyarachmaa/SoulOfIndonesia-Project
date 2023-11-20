@@ -37,12 +37,14 @@
     <section id="" class="pt-16 pb-32 bg-cream">
         <div class="container mx-auto">
             <div class="w-full px-4">
-                <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center pb-16">Ingin tahu banyak ragam batik Indonesia?</h1>
+                <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center pb-16">Mari kunjungi tempat-tempat wisata batik!</h1>
             </div>
     
             <div class="flex flex-wrap">
-            @foreach ($rekom as $rekoms)
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/4">
+            @php $counter = 0; $heroArticleId = $rekom->find(1)->id; @endphp
+        @foreach ($rekom as $rekoms)
+            @if ($counter < 3 && $rekoms->id !== $heroArticleId)
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-cream rounded-xl overflow-hidden shadow-lg mb-10">
                         <img src="{{ asset($rekoms->foto) }}" alt="{{ $rekoms->judul }}" class="w-full">
                             <div class="py-8 px-6">
@@ -53,11 +55,20 @@
                             </div>
                     </div>
                 </div>
-            @endforeach
+                @php $counter++; @endphp
+            @elseif ($rekoms->id === $heroArticleId)
+                <!-- Skip the hero article -->
+                @continue
+            @else
+                @break
+            @endif
+        @endforeach
             </div>
     
             <div class="w-full px-4 flex items-center justify-center">
+            <a href="/rekom/allArticle">
                 <button type="submit" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-8 rounded-lg hover:bg-yellow hover:text-cream">Telusuri lebih banyak</button>
+            </a>   
             </div>
         </div>
     </section>

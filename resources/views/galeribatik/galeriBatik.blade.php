@@ -40,23 +40,34 @@
             </div>
     
             <div class="flex flex-wrap">
-            @foreach ($articles as $artikel)
+            @php $counter = 0; $heroArticleId = $articles->find(1)->id; @endphp
+        @foreach ($articles as $artikel)
+            @if ($counter < 4 && $artikel->id !== $heroArticleId)
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/4">
                     <div class="bg-cream rounded-xl overflow-hidden shadow-lg mb-10">
                         <img src="{{ asset($artikel->foto) }}" alt="{{ $artikel->judul }}" class="w-full">
-                            <div class="py-8 px-6">
-                                <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">{{ $artikel->judul }}</h3>
-                                <div class="text-center">
-                                    <a href="/galeribatik/{{ $artikel->id }}" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
-                                </div>
+                        <div class="py-8 px-6">
+                            <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">{{ $artikel->judul }}</h3>
+                            <div class="text-center">
+                                <a href="/galeribatik/{{ $artikel->id }}" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                             </div>
+                        </div>
                     </div>
                 </div>
-            @endforeach
-            </div>
+                @php $counter++; @endphp
+            @elseif ($artikel->id === $heroArticleId)
+                <!-- Skip the hero article -->
+                @continue
+            @else
+                @break
+            @endif
+        @endforeach
+        </div>
     
             <div class="w-full px-4 flex items-center justify-center">
-                <button type="submit" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-8 rounded-lg hover:bg-yellow hover:text-cream">Telusuri lebih banyak</button>
+                <a href="/galeribatik/showMore">
+                    <button type="submit" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-8 rounded-lg hover:bg-yellow hover:text-cream">Telusuri lebih banyak</button>
+                </a>
             </div>
         </div>
     </section>

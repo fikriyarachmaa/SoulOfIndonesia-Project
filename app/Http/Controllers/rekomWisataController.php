@@ -13,6 +13,11 @@ class rekomWisataController extends Controller
         return view('/rekom/rekomendasiWisata', 
            compact(['rekom']));
     }
+    public function showMoreArticles()
+    {
+        $rekom = RekomWisata::all();
+        return view('/rekom/allArticle', compact('rekom'));
+    }
     public function show_details($id)
     {
         $rekom = RekomWisata::find($id);
