@@ -33,7 +33,7 @@
             <div class="bg-white w-full rounded shadow">
                 <div class="grid grid-cols-2">
                     <div class="p-auto m-auto">
-                        <h1 class="font-semibold text-3xl">Selamat Datang, JEFRI!</h1>
+                        <h1 class="font-semibold text-3xl">Selamat Datang, {{ auth()->user()->name }}!</h1>
                         <h3 class="font-regular text-xl py-6">Lihat apa yang baru hari ini</h3>
                     </div>
                     <div class="p-auto m-auto">
@@ -45,21 +45,21 @@
 
             <!-- count start -->
             <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2  gap-4 mt-2 p-2">
-                <!-- Bagian 1 - Galeri Batik start-->
+                <!-- Bagian 1 - Produk Terunggah start-->
                 <div class="bg-white p-4 rounded-md shadow">
                     <h2 class="text-green-dark text-2xl font-bold pb-1 text-right">Produk Terunggah</h2>
                     <div class="my1-"></div> <!-- ruang batas -->
-                    <h2 class="text-yellow  text-5xl font-semibold pb-1">10</h2>
+                    <h2 class="text-yellow  text-5xl font-semibold pb-1">{{ $countApproved }}</h2>
                 </div>
-                <!-- Bagian 1 - Galeri Batik end-->
+                <!-- Bagian 1 - Produk Terunggah end-->
 
-                <!-- Bagian 2 - Rekomendasi wisata start-->
+                <!-- Bagian 2 - Menunggu Verifikasi start-->
                 <div class="bg-white p-4 rounded-md shadow">
                     <h2 class="text-green-dark text-2xl font-bold pb-1 text-right">Menunggu Verifikasi</h2>
                     <div class="my1-"></div> <!-- ruang batas -->
-                    <h2 class="text-yellow  text-5xl font-semibold pb-1">10</h2>
+                    <h2 class="text-yellow  text-5xl font-semibold pb-1">{{ $countPending }}</h2>
                 </div>
-                <!-- Bagian 2 - Rekomendasi wisata end-->
+                <!-- Bagian 2 - Menunggu Verifikasi end-->
                 
 
             </div>

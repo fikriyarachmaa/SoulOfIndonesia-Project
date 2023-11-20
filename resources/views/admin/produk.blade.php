@@ -43,10 +43,10 @@
                     <span class="sr-only">Image</span>
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Product
+                    Produk
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Price
+                    Harga
                 </th>
                 <th scope="col" class="px-6 py-3">
                     Action
@@ -54,51 +54,23 @@
             </tr>
         </thead>
         <tbody>
+            @foreach($produks as $produk)
             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <td class="w-20 p-4">
-                    <img src="/img/blousesandra.png" alt="blousesandra">
+                    <img src="{{ $produk->foto }}" alt="blousesandra">
                 </td>
                 <td class="px-6 py-4 font-medium text-green-darkest whitespace-nowrap">
-                    Apple Watch
+                    {{ $produk->nama }}
                 </td>
                 <td class="px-6 py-4 font-medium text-green-darkest whitespace-nowrap">
-                    $599
+                    Rp {{ number_format($produk->harga, 0, ',', '.') }}
                 </td>
                 <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Approve</a>
-                    <a href="#" class="font-medium text-rose-600 dark:text-rose-600 hover:underline">Not approve</a>
+                    <a href="{{ route('admin.produk.approve', $produk->id) }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Approve</a>
+                    <a href="{{ route('admin.produk.notapprove', $produk->id) }}" class="font-medium text-rose-600 dark:text-rose-600 hover:underline">Not approve</a>
                 </td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-            <td class="w-20 p-4">
-                    <img src="/img/blousesandra.png" alt="blousesandra">
-                </td>
-                <td class="px-6 py-4 font-medium text-green-darkest whitespace-nowrap">
-                    Apple Watch
-                </td>
-                <td class="px-6 py-4 font-medium text-green-darkest whitespace-nowrap">
-                    $599
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Approve</a>
-                    <a href="#" class="font-medium text-rose-600 dark:text-rose-600 hover:underline">Not approve</a>
-                </td>
-            </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-            <td class="w-20 p-4">
-                    <img src="/img/blousesandra.png" alt="blousesandra">
-                </td>
-                <td class="px-6 py-4 font-medium text-green-darkest whitespace-nowrap">
-                    Apple Watch
-                </td>
-                <td class="px-6 py-4 font-medium text-green-darkest whitespace-nowrap">
-                    $599
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Approve</a>
-                    <a href="#" class="font-medium text-pink-800 dark:text-pink-800 hover:underline">Not approve</a>
-                </td>
-            </tr>
+            @endforeach
         </tbody>
     </table>
         </div>

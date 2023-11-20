@@ -7,7 +7,7 @@
   @vite('resources/css/app.css') 
 </head>
 <body id="landingpage" class="bg-cream">
-@include('components.header')
+@include('components.headerpengrajin')
 <section>
     <!-- Ini adalah halaman awal -->
     <div class="grid max-w-screen-xl px-4 pt-16 pb-8 mx-auto lg:grid-cols-12">

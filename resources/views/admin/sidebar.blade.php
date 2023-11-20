@@ -10,7 +10,7 @@
     <!-- sidebar start -->
     <div class="p-2 bg-green-pastel shadow h-full w-60 flex flex-col hidden md:flex" id="sideNav">
             <nav>
-                <a class="block text-green-dark py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/admin/admin">
+                <a class="block text-green-dark py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/admin/dashboard">
                     <i class="fas fa-home mr-2"></i>Dashboard
                 </a>
                 <a class="block text-green-dark py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/admin/profile">
@@ -27,10 +27,14 @@
                 </a>
             </nav>
 
-            <!-- logout start -->
-            <a class="block text-green-dark py-2.5 px-4 my-2 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white mt-auto" href="#">
+            <!-- logout start --> 
+            <a class="block text-green-dark py-2.5 px-4 my-2 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white mt-auto" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 <i class="fas fa-sign-out-alt mr-2"></i>Log out
             </a>
+
+            <form id="logout-form" method="POST" action="{{ route('logout') }}" style="display: none;">
+                 @csrf
+            </form>
                 <!-- garis batas -->
                 <div class="bg-gradient-to-r from-cyan-300 to-cyan-500 h-px mt-2"></div>
                 <!-- Copyright start -->

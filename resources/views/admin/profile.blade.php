@@ -92,10 +92,10 @@
                 </div> 
                 <div class="mt-16 flex flex-col items-center">
                     <h4 class="text-xl font-bold text-gray-600 dark:text-white">
-                    Adela Parkson
+                        {{ auth()->user()->name }}!
                     </h4>
                     <p class="text-base font-normal text-gray-600">Tim Admin</p>
-                    <p class="text-base font-normal text-gray-600 pt-4">fikriyarachma09@gmail.com</p>
+                    <p class="text-base font-normal text-gray-600 pt-4">{{ auth()->user()->email }}</p>
                     <p class="text-base font-normal text-gray-600 pb-4">Perempuan</p>
                 </div> 
             </div>  
