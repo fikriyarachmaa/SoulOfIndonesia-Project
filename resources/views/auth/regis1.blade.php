@@ -43,9 +43,9 @@
     </div>
     <div>
 
-        <!-- Password -->
+        <!-- Kata Sandi -->
     <div class="text-gray-800 block my-3 text-md">
-            <x-input-label  for="password" :value="__('Password :')" />
+            <x-input-label  for="password" :value="__('Kata Sandi :')" />
             <x-text-input class="w-full bg-gray-100 px-4 py-2 rounded-lg" style="outline: 1px solid green;" id="password" placeholder="Tulis Kata Sandi"
                             type="password"
                             name="password"
@@ -55,11 +55,11 @@
         </div>
 <!-- Confirm Password -->
         <div class="text-gray-800  block my-3 text-md">
-            <x-input-label for="password_confirmation" :value="__('Konfirmasi Password :')" />
+            <x-input-label for="password_confirmation" :value="__('Konfirmasi Kata Sandi :')" />
 
             <x-text-input id="password_confirmation" class="w-full bg-gray-100 px-4 py-2 rounded-lg" style="outline: 1px solid green;" 
                             type="password"
-                            name="password_confirmation" required autocomplete="new-password" placeholder="Konfirmasi Password"/>
+                            name="password_confirmation" required autocomplete="new-password" placeholder="Konfirmasi Kata Sandi"/>
 
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
         </div>
