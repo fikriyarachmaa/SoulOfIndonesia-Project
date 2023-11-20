@@ -28,7 +28,7 @@ Route::get('/dashboard', function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
-    Route::get('/penjual/dashboard', [PengrajinController::class, 'dashboard'])->name('pengrajin.dashboard');
+    Route::get('/pengrajin/dashboard', [PengrajinController::class, 'dashboard'])->name('pengrajin.dashboard');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
@@ -90,9 +90,6 @@ Route::get('/auth/regis', function () {
 
 
 /*ADMIN ROUTE*/
-Route::get('/admin/admin', function () {
-    return view('admin/admin');
-});
 Route::get('/admin/profile', function () {
     return view('admin/profile');
 });
@@ -102,9 +99,10 @@ Route::get('/admin/artikel', function () {
 Route::get('/admin/rekomendasiWisata', function () {
     return view('admin/rekomendasiWisata');
 });
-Route::get('/admin/produk', function () {
-    return view('admin/produk');
-});
+Route::get('/admin/produk', [ProdukBatikController::class, 'pending'])->name('admin.produk.pending');
+Route::get('/admin/produk/approve/{id}', [ProdukBatikController::class, 'approve'])->name('admin.produk.approve');
+Route::get('/admin/produk/notapprove/{id}', [ProdukBatikController::class, 'notapprove'])->name('admin.produk.notapprove');
+
 Route::get('/admin.regis', function () {
     return view('admin/regis');
 });
@@ -142,9 +140,6 @@ Route::get('/rekom/wisataDetails', function () {
 /*rekom ROUTE*/
 
 /*PENGRAJIN ROUTE*/
-Route::get('/pengrajin/pengrajin', function () {
-    return view('pengrajin/pengrajin');
-});
 Route::get('/pengrajin/profile', function () {
     return view('pengrajin/profile');
 });

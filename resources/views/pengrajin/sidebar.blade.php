@@ -10,7 +10,7 @@
     <!-- sidebar start -->
     <div class="p-2 bg-green-pastel shadow h-full w-60 flex flex-col hidden md:flex" id="sideNav">
             <nav>
-                <a class="block text-green-dark py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/pengrajin/pengrajin">
+                <a class="block text-green-dark py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/pengrajin/dashboard">
                     <i class="fas fa-home mr-2"></i>Dashboard
                 </a>
                 <a class="block text-green-dark py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-300 hover:text-white" href="/pengrajin/biodata">

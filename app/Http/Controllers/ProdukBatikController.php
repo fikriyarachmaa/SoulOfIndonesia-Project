@@ -9,9 +9,9 @@ class ProdukBatikController extends Controller
 {
     public function index()
     {
-        $produks = ProdukBatik::all->get();
+        $produks = ProdukBatik::all();
         return view('/batikshop/BatikShop', 
-           compact(['produks', '']));
+           compact(['produks']));
     }
 
     public function create()
@@ -90,6 +90,30 @@ class ProdukBatikController extends Controller
         $produks->delete();
 
         return redirect('/pengrajin/produk')->with('success', 'Produk berhasil dihapus');
+    }
+
+    public function pending()
+    {
+        $produks = ProdukBatik::where('status', 'pending')->get();
+        return view('admin.produk', compact('produks'));
+    }
+
+    public function approve($id)
+    {
+        $produks = ProdukBatik::find($id);
+        $produks->status = 'approve';
+        $produks->save();
+
+        return redirect('/admin/produk')->with('success', 'Produk approve');
+    }
+
+    public function notApprove($id)
+    {
+        $produks = ProdukBatik::find($id);
+        $produks->status = 'not approve';
+        $produks->save();
+
+        return redirect('/admin/produk')->with('success', 'Produk not approve');
     }
 
 

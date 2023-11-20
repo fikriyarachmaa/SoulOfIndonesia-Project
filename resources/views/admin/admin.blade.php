@@ -32,7 +32,7 @@
             <div class="bg-white w-full rounded shadow">
                 <div class="grid grid-cols-2">
                     <div class="p-auto m-auto">
-                        <h1 class="font-semibold text-3xl">Selamat Datang Fikriya!</h1>
+                        <h1 class="font-semibold text-3xl">Selamat Datang {{ auth()->user()->name }}!</h1>
                         <h3 class="font-regular text-xl py-6">Lihat apa yang baru hari ini</h3>
                     </div>
                     <div class="p-auto m-auto">
@@ -48,7 +48,7 @@
                 <div class="bg-white p-4 rounded-md shadow">
                     <h2 class="text-black text-2xl font-bold pb-1 text-right">Galeri Batik</h2>
                     <div class="my1-"></div> <!-- ruang batas -->
-                    <h2 class="text-yellow  text-5xl font-semibold pb-1">10</h2>
+                    <h2 class="text-yellow  text-5xl font-semibold pb-1">{{ $countArtikel }}</h2>
                     <p class="text-gray-500 text-medium font-regular pb-1 text-right">Artikel terposting</p>
                 </div>
                 <!-- Bagian 1 - Galeri Batik end-->
@@ -57,7 +57,7 @@
                 <div class="bg-white p-4 rounded-md shadow">
                     <h2 class="text-black text-2xl font-bold pb-1 text-right">Rekomendasi Wisata</h2>
                     <div class="my1-"></div> <!-- ruang batas -->
-                    <h2 class="text-yellow  text-5xl font-semibold pb-1">10</h2>
+                    <h2 class="text-yellow  text-5xl font-semibold pb-1">{{ $countRekom }}</h2>
                     <p class="text-gray-500 text-medium font-regular pb-1 text-right">Artikel terposting</p>
                 </div>
                 <!-- Bagian 2 - Rekomendasi wisata end-->
@@ -66,7 +66,7 @@
                 <div class="bg-white p-4 rounded-md shadow">
                     <h2 class="text-black text-2xl font-bold pb-1 text-right">Produk</h2>
                     <div class="my1-"></div> <!-- ruang batas -->
-                    <h2 class="text-yellow  text-5xl font-semibold pb-1">10</h2>
+                    <h2 class="text-yellow  text-5xl font-semibold pb-1">{{ $countProduk }}</h2>
                     <p class="text-gray-500 text-medium font-regular pb-1 text-right">Produk approve</p>
                 </div>
                 <!-- Bagian 3 - Produk end-->
