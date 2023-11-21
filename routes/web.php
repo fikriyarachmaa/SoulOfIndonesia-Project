@@ -44,6 +44,7 @@ Route::get('/landingpage', function () {
     return view('landingpage');
 });
 Route::get('/landingpage', [landingPageController::class, 'index']);
+Route::post('/landingpage/ulasan', [ulasanController::class, 'store'])->name('ulasan');
 /*LANDING PAGE ROUTE*/
 
 
@@ -70,8 +71,7 @@ Route::get('/components/header', function () {
 Route::get('/components/footer', function () {
     return view('components/footer');
 });
-Route::get('landingpage', [ulasanController::class, 'create'])->name('ulasan.create');
-Route::post('landingpage', [ulasanController::class, 'store'])->name('ulasan.store');
+Route::get('landingpage', [landingPageController::class, 'index']);
 
 Route::get('/galeribatik/galeribatik', [artikelBatikController::class, 'index'])->name('articles');
 

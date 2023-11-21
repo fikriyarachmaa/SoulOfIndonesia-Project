@@ -51,7 +51,7 @@
             </div>
             <div class="w-full px-4 mb-12 text-green-darkest font medium md:w-1/3">
                 <h3 class="font-semibold text-xl mb-5">ULASAN</h3>
-                <form action="/footer" method="POST" class="p-4 md:p-5" enctype="multipart/form-data">
+                <form action="{{ route('ulasan') }}" method="POST" class="p-4 md:p-5" enctype="multipart/form-data">
                     @csrf
                     <div class="w-full mb-4">
                         <label for="nama" class="text-base text-green-darkest font-bold">Nama</label>

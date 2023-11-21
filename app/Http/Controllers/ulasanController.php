@@ -26,7 +26,7 @@ class ulasanController extends Controller
         $ulas->nama = $request->nama;
         $ulas->review = $request->review;
 
-        $article->save();
+        $ulas->save();
 
         return redirect('landingpage')->with('success', 'Review added successfully');
     }
