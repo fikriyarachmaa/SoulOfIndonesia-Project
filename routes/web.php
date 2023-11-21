@@ -7,6 +7,7 @@ use App\Http\Controllers\PengrajinController;
 use App\Http\Controllers\ProdukBatikController;
 use App\Http\Controllers\artikelBatikController;
 use App\Http\Controllers\rekomWisataController;
+use App\Http\Controllers\landingPageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,14 +35,15 @@ Route::middleware('auth')->group(function () {
     Route::delete('/admin/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+/*LANDING PAGE ROUTE*/
 Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/landingpage', function () {
     return view('landingpage');
 });
-
-
+Route::get('/landingpage', [landingPageController::class, 'index']);
+/*LANDING PAGE ROUTE*/
 
 
 

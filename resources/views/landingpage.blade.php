@@ -53,7 +53,7 @@
 
 
 
-<!-- Ini adalah halaman ketiga -->
+<!-- Ini adalah galeri batik -->
 
     <section id="opening" class="pt-16 pb-16">
         <div class="container mx-auto">
@@ -61,15 +61,15 @@
             <div class="flex flex-wrap items-center">
                 <div class="w-full lg:w-1/2 px-4 text-center">
                     <div class="mt-10">
-                        <img src="/img/jamugendong.png" alt="Batik Jamu Gendong" class="max-w-full h-auto mx-auto md:max-w-md lg:max-w-md">
+                        <img src="{{ $articles->find(1)->foto }}" alt="image" class="max-w-full h-auto mx-auto md:max-w-md lg:max-w-md">
                     </div>
                 </div>
                 <div class="w-full lg:w-1/2 px-4">
-                    <h2 class="text-yellow font-semibold text-xl md:text-2xl lg:text-3xl mb-4">Batik Jamu Gendong Motif Tejo</h2>
-                    <p class="text-green-darkest font-regular pb-8 md:pb-10 text-justify">Batik Jamu Gendong atau Batik Mbok Jamu adalah salah satu motif batik tradisional Indonesia yang menggambarkan seorang wanita yang membawa keranjang atau gendongan berisi ramuan jamu tradisional.</p>
+                    <h2 class="text-yellow font-semibold text-xl md:text-2xl lg:text-3xl mb-4">{{ $articles->find(1)->judul }}</h2>
+                    <p class="text-green-darkest font-regular pb-8 md:pb-10 text-justify">{{ $articles->find(1)->opening }}</p>
                     
                     <div class="flex justify-center items-center pt-8">
-                    <a href="/galeribatik/batikjamugendong" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                    <a href="/galeribatik/{{ $articles->find(1)->id }}" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
                     <a href="/galeribatik/galeribatik" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out ml-4">Informasi Batik Lainnya</a>
                     </div>
                   </div>
@@ -77,113 +77,73 @@
         </div>
     </section>
 
-<!-- Ini adalah halaman keempat -->
-    {{-- List Section Start--}}
-    <section id="listbatik" class="pt-16 pb-8">
+<!-- Ini adalah rekom wisata -->
+{{-- List Section Start--}}
+    <section id="" class="pt-16 pb-8 bg-cream">
         <div class="container mx-auto">
             <div class="w-full px-4">
-                <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center pb-4">Bosen wisata itu-itu aja?</h1>
-                <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center pb-16">Cobain jelajah wisata batik Indonesia</h1>
+                <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center pb-16">Mari kunjungi tempat-tempat wisata batik!</h1>
             </div>
     
             <div class="flex flex-wrap">
+            @php $counter = 0; @endphp
+        @foreach ($rekom as $rekoms)
+            @if ($counter < 3 && $rekoms->id)
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-                    <div class="bg-cream rounded-xl overflow-hidden shadow-lg mb-10 ">
-                        <img src="/img/kampunggiriloyo.png" alt="kampung batik giriloyo" class="w-full">
-                        <div class="py-8 px-6">
-                            <h3 class="text-medium font-semibold text-yellow mb-2 truncate hover:text-green-darkest text-center">Kampung Batik Giriloyo</h3>
-                            <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Yogyakarta</h3>
-                            <div class="text-center">
-                                <a href="/rekom/kampungkauman" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                    <div class="bg-cream rounded-xl overflow-hidden shadow-lg mb-10">
+                        <img src="{{ asset($rekoms->foto) }}" alt="{{ $rekoms->judul }}" class="w-full">
+                            <div class="py-8 px-6">
+                                <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">{{ $rekoms->judul }}</h3>
+                                <div class="text-center">
+                                    <a href="/rekom/{{ $rekoms->id }}" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
-
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-                    <div class="bg-cream rounded-xl overflow-hidden shadow-lg mb-10 ">
-                        <img src="/img/kampungsemarang.png" alt="batik parang" class="w-full">
-                        <div class="py-8 px-6">
-                            <h3 class="text-medium font-semibold text-yellow mb-2 truncate hover:text-green-darkest text-center">Semarang Batik Village</h3>
-                            <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Semarang</h3>
-                            <div class="text-center">
-                                <a href="/rekom/kampungkauman" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-                    <div class="bg-cream rounded-xl overflow-hidden shadow-lg mb-10 ">
-                        <img src="/img/rumahpalbatu.png" alt="Rumah batik palbatu, jakarta" class="w-full">
-                        <div class="py-8 px-6">
-                            <h3 class="text-medium font-semibold text-yellow mb-2 truncate hover:text-green-darkest text-center">Rumah Batik Palbatu</h3>
-                            <h3 class="text-medium font-semibold text-yellow mb-4 truncate hover:text-green-darkest text-center">Jakarta</h3>
-                            <div class="text-center">
-                                <a href="/rekom/kampungkauman" class="text-base font-semibold text-green-darkest bg-green-pastel py-1 px-6 rounded-lg hover:bg-yellow hover:text-cream transition duration-300 ease-in-out">Selengkapnya</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                @php $counter++; @endphp
+            @else
+                @break
+            @endif
+        @endforeach
+            </div>
+    
             <div class="w-full px-4 flex items-center justify-center">
-                <a href ="/rekom/rekomwisata" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-8 rounded-lg hover:bg-yellow hover:text-cream">Telusuri lebih banyak</a>
+            <a href="/rekom/allArticle">
+                <button type="submit" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-8 rounded-lg hover:bg-yellow hover:text-cream">Telusuri lebih banyak</button>
+            </a>   
             </div>
         </div>
     </section>
+    {{-- LIst Section End --}}
 
+     <!-- Ini adalah produk -->
+     <<!-- produk -->
+    <section class="text-gray-600 body-font">
+      <div class="w-full px-4 pt-6">
+          <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center">Batik Shop</h1>
+      </div>
 
-
-     <!-- Ini adalah halaman kelima -->
-     <section class="text-gray-600 body-font">
-  <div class="container mx-auto pt-16 pb-16">
-    <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center pb-16 pt-16">Batikshop</h1>
-    <h2 class="text-xl font-bold text-gray-900 dark:text-white">Produk Untukmu</h2>
-    <div class="flex grid grid-cols gap-8 xl:mt-8 xl:gap-8 md:grid-cols-2 xl:grid-cols-4">
-      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
-        <a href="#" class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/blousesandra.png">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KATEGORI</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Kemeja Wanita</h2>
-          <p class="mt-1">Rp 120.000</p>
+      <div class="container px-5 pt-16 pb-8">
+        <h2 class="text-xl font-bold text-gray-900 dark:text-white">Produk Untukmu</h2>
+        <div class="flex grid grid-cols gap-8 xl:mt-8 xl:gap-8 md:grid-cols-2 xl:grid-cols-4">
+          @foreach ($produks as $produk)
+            <div class="p-4 w-full bg-cream border border-green-medium border-1 rounded-xl overflow-hidden shadow-lg mb-10">
+                <a href="/batikshop/{{ $produk->id }}" class="block relative h-48 rounded overflow-hidden">
+                  <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="{{ asset($produk->foto) }}">
+                </a>
+            <div class="mt-4">
+                <h3 class="text-green-darkest text-xs tracking-widest title-font mb-1">{{ $produk->kategori }}</h3>
+                <h2 class="text-green-medium title-font text-lg font-medium">{{ $produk->nama }}</h2>
+                <p class="mt-1 text-yellow font-medium">Rp {{ $produk->harga }}</p>
+            </div>
         </div>
-      </div>
-      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
-        <a href="#" class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/batiksolo.png">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KATEGORI</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Kain Batik</h2>
-          <p class="mt-1">Rp 100.000</p>
-        </div>
-      </div>
-      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
-        <a href="#" class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/roklilit.png">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-            KATEGORI
-          </h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Rok Batik</h2>
-          <p class="mt-1">Rp 170.000</p>
-        </div>
-      </div>
-      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
-        <a href="#" class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/batiksoganparang.png">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KATEGORI</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Kain Batik</h2>
-          <p class="mt-1">Rp 200.000</p>
-        </div>
-      </div>
+      @endforeach
     </div>
-    <div class="flex justify-center items-center pt-12">
+  </div>
+</section>
+  <!-- produk -->
+
+    <div class="flex justify-center items-center ">
       <a href="/batikshop/batikshop" class="text-base font-semibold text-green-darkest bg-green-pastel py-2 px-8 rounded-lg hover:bg-yellow hover:text-cream">Jelajahi Hasil Karya Batik Lainnya</a>
     </div>
   </div>
