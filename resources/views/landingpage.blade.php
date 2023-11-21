@@ -120,21 +120,9 @@
 
      <!-- Ini adalah halaman kelima -->
      <section class="text-gray-600 body-font">
-  <div class="container mx-auto pt-16 pb-16">
-    <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center pb-16 pt-16">Batikshop</h1>
-    <h2 class="text-xl font-bold text-gray-900 dark:text-white">Produk Untukmu</h2>
-    <div class="flex grid grid-cols gap-8 xl:mt-8 xl:gap-8 md:grid-cols-2 xl:grid-cols-4">
-      <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
-        <a href="#" class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/blousesandra.png">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KATEGORI</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Kemeja Wanita</h2>
-          <p class="mt-1">Rp 120.000</p>
-        </div>
-      </div>
-
+     <div class="w-full px-4">
+                <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center pt-16">Batik Shop</h1>
+            </div>
       <div class="container px-5 pt-16 pb-8">
         <h2 class="text-xl font-bold text-gray-900 dark:text-white">Produk Untukmu</h2>
         <div class="flex grid grid-cols gap-8 xl:mt-8 xl:gap-8 md:grid-cols-2 xl:grid-cols-4">
