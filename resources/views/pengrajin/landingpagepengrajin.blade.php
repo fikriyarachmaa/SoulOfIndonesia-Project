@@ -14,7 +14,7 @@
         <div class="lg:col-span-7 flex flex-col justify-center">
             <div style="text-align: center;">
                 <h1 class="max-w-2xl mb-4 text-4xl font-bold leading-none md:text-5xl xl:text-6xl text-green-darkest">Soul Of Indonesia</h1>
-                <p class="max-w-4xl mb-6 font-bold text-gray-500 lg:mb-8 md:text-lg lg:text-xl text-green-darkest">Get To Know About Batik Nusantara</p>
+                <p class="max-w-4xl mb-6 font-bold lg:mb-8 md:text-lg lg:text-xl text-green-darkest">Get To Know About Batik Nusantara</p>
                 <a href="#section2" class="inline-flex items-center px-5 py-3 text-base font-bold text-center text-green-darkest rounded-lg bg-green-pastel hover:bg-yellow hover:text-cream" style="border-radius: 70px; display: inline-block; margin: 0 auto; margin-top: 20px;">
                     Mulai Jelajah Batik
                 </a>
@@ -139,7 +139,7 @@
   <div class="container mx-auto pt-16 pb-16">
     <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center pb-16 pt-16">Batikshop</h1>
     <h2 class="text-xl font-bold text-gray-900 dark:text-white">Produk Untukmu</h2>
-    <div class="flex grid grid-cols gap-8 xl:mt-8 xl:gap-8 md:grid-cols-2 xl:grid-cols-4">
+    <div class="grid grid-cols gap-8 xl:mt-8 xl:gap-8 md:grid-cols-2 xl:grid-cols-4">
       <div class="p-4 w-full shadow-lg bg-slate-100 rounded-lg">
         <a href="#" class="block relative h-48 rounded overflow-hidden">
           <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/img/blousesandra.png">
