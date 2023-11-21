@@ -57,6 +57,8 @@ Route::get('/batikshop/viewProduk', function () {
 
 Route::get('/batikshop/{id}', [ProdukBatikController::class, 'show_details'])->name('produks.show');
 
+Route::get('/batikshop/showSearch', [ProdukBatikController::class, 'search'])->name('produks.search');
+
 /*BATIK SHOP ROUTE*/
 
 Route::get('/components/header', function () {

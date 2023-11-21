@@ -26,6 +26,18 @@ class ProdukBatikController extends Controller
              //'title' => 'Article Details',
          ], compact(['produks']));
     }
+    public function search(Request $request)
+    {
+        $kategori = $request->input('kategori');
+
+        if ($kategori) {
+            $produks = ProdukBatik::where('kategori', $kategori)->get();
+        } else {
+            $produks = ProdukBatik::all();
+        }
+
+        return view('/batikshop/showSearch', compact('produks'));
+    }
     public function create()
     {
         $produks = ProdukBatik::where('status', 'approve')->get();

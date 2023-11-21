@@ -15,10 +15,11 @@
                     <h1 class="font-bold text-4xl text-green-dark md:text-5xl lg:w-10/12">Selamat Datang di Batik Shop !</h1>
                     <p class="text-base text-green-dark md:text-2xl lg:w-10/12 py-4">Eksplorasi produk seleramu lalu segera hubungi seller untuk miliki barang impianmu!</p>
                     <!--search bar -->
-                    <form action="" class="w-full mt-8">
+                    <form action="{{ route('produks.search') }}" method="GET" class="w-full mt-8">
+                    @csrf    
                         <div class="relative flex p-1 rounded-full bg-white shadow-md md:p-2">
-                            <input placeholder="Search by category" class="w-full p-4 rounded-full" type="text">
-                            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 
+                            <input placeholder="Search by category" class="w-full p-4 rounded-full" type="search" id="default-search" name="kategori">
+                            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 
                                 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
                         </div>
                     </form>
@@ -31,7 +32,9 @@
         </div>
     </div>
     <!--hero image -->
-  
+
+    
+
     <!--kelebihan -->
     <section class="mt-32 font-Raleway">
     <div class="grid grid-cols-1 gap-8 mt-10 mx-10 xl:mt-12 xl:gap-24 md:grid-cols-2 xl:grid-cols-2">
@@ -118,7 +121,6 @@
         <button type="button" class="text-green-dark hover:text-white border-2 border-green-darkest hover:bg-green-light focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">Lihat lainnya</button> 
     </a>
   </div>
- 
 
   @include('components.footer')
 </body>
