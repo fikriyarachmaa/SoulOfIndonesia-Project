@@ -51,14 +51,15 @@
             </div>
             <div class="w-full px-4 mb-12 text-green-darkest font medium md:w-1/3">
                 <h3 class="font-semibold text-xl mb-5">ULASAN</h3>
-                <form>
+                <form action="/footer" method="POST" class="p-4 md:p-5" enctype="multipart/form-data">
+                    @csrf
                     <div class="w-full mb-4">
-                        <label for="name" class="text-base text-green-darkest font-bold">Nama</label>
-                        <input type="text" id="name" name="name" class="w-full bg-cream text-dark-green-darkest p-3 rounded-md focus:outline-none focus:ring-green-darkest focus:ring-1 focus:border-green-darkest"/>
+                        <label for="nama" class="text-base text-green-darkest font-bold">Nama</label>
+                        <input type="text" id="nama" name="nama" class="w-full bg-cream text-dark-green-darkest p-3 rounded-md focus:outline-none focus:ring-green-darkest focus:ring-1 focus:border-green-darkest"/>
                     </div>
                     <div class="w-full mb-4">
-                        <label for="ulasan" class="text-base text-green-darkest font-bold">Ulasan</label>
-                        <input type="text" id="ulasan" name="ulasan" class="w-full bg-cream text-dark-green-darkest p-3 rounded-md focus:outline-none focus:ring-green-darkest focus:ring-1 focus:border-green-darkest"/>
+                        <label for="review" class="text-base text-green-darkest font-bold">Ulasan</label>
+                        <input type="text" id="review" name="review" class="w-full bg-cream text-dark-green-darkest p-3 rounded-md focus:outline-none focus:ring-green-darkest focus:ring-1 focus:border-green-darkest"/>
                     </div>
                     <div class="w-full px-4 flex items-center justify-center">
                         <button type="submit" class="text-base font-semibold text-cream bg-green-darkest py-2 px-8 rounded-lg hover:bg-yell">Kirim</button>

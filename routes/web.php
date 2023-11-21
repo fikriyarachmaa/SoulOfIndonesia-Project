@@ -8,6 +8,7 @@ use App\Http\Controllers\ProdukBatikController;
 use App\Http\Controllers\artikelBatikController;
 use App\Http\Controllers\rekomWisataController;
 use App\Http\Controllers\landingPageController;
+use App\Http\Controllers\ulasanController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -69,6 +70,8 @@ Route::get('/components/header', function () {
 Route::get('/components/footer', function () {
     return view('components/footer');
 });
+Route::get('landingpage', [ulasanController::class, 'create'])->name('ulasan.create');
+Route::post('landingpage', [ulasanController::class, 'store'])->name('ulasan.store');
 
 Route::get('/galeribatik/galeribatik', [artikelBatikController::class, 'index'])->name('articles');
 

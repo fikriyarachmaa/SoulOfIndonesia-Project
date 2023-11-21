@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\ProdukBatik;
 use App\Models\artikelBatik;
 use App\Models\RekomWisata;
+use App\Models\ulasan;
 
 class landingPageController extends Controller
 {
@@ -14,8 +15,9 @@ class landingPageController extends Controller
         $produks = ProdukBatik::all();
         $articles = artikelBatik::all();
         $rekom = RekomWisata::all();
+        $ulas = ulasan::all();
         return view('landingpage', [
             'title' => 'Home',
-        ], compact(['produks', 'articles', 'rekom']));
+        ], compact(['produks', 'articles', 'rekom', 'ulas']));
     }
 }

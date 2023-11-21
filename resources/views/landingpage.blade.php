@@ -51,11 +51,9 @@
     </div>
 </section>
 
-
-
 <!-- Ini adalah galeri batik -->
 
-    <section id="opening" class="pt-16 pb-16">
+<section id="opening" class="pt-16 pb-16">
         <div class="container mx-auto">
             <h1 class="text-green-darkest font-bold text-2xl md:text-4xl lg:text-4xl flex justify-center pb-16">Trending Batik</h1>
             <div class="flex flex-wrap items-center">
@@ -76,6 +74,8 @@
             </div>
         </div>
     </section>
+
+
 
 <!-- Ini adalah rekom wisata -->
 {{-- List Section Start--}}
@@ -151,46 +151,29 @@
 
 
 <section>
-     <!-- Ini adalah halaman keenam -->
+     <!-- Ini adalah halaman keenam ulasan -->
 <div class="container my-24 mx-auto md:px-6 pt-8">
   <section class="mb-32 text-center">
     <h2 class="mb-12 text-3xl font-bold">Ulasan</h2>
 
     <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
+    @foreach ($ulas as $ulasans)
       <div class="mb-12 md:mb-0">
-        <h5 class="mb-2 text-lg font-bold">Maria Smantha</h5>
+        <h5 class="mb-2 text-lg font-bold">{{ $ulasans->nama }}</h5>
         <p class="mb-4">
-        Website ini sangat bermanfaat untuk mengenal berbagai jenis batik di Indonesia. Melalui website ini bisa membantu saya sebagai pelanggan untuk membeli produk batik. 
+        {{ $ulasans->review }}
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
             <path fill="currentColor"
               d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
           </svg>
         </p>
       </div>
-      <div class="mb-12 md:mb-0">
-        <h5 class="mb-2 text-lg font-bold">Lisa Barito</h5>
-        <p class="mb-4">
-          Melalui website ini saya dapat membeli produk batik, sehingga memudahkan saya membeli fashion yang mengangkat kebudayaan Indonesia. Serta saya senang bisa memakai karya batik dari para pengrajin batik.
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
-            <path fill="currentColor"
-              d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
-          </svg>
-        </p>
-      </div>
-      <div class="mb-0">
-        <h5 class="mb-2 text-lg font-bold">Bagus Adi Kara</h5>
-        <p class="mb-4">
-         Saya senang dapat dengan mudah menemukan rekomendasi tempat wisata batik. Sehingga saya bisa mengajak anak saya liburan sekaligus mengenalkan warisan budaya Indonesia.
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
-            <path fill="currentColor"
-              d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
-          </svg>
-        </p>
-      </div>
+      @endforeach
     </div>
   </section>
 </div>
 </section>
+
 @include('components.footer')
 </body>
 </html>
