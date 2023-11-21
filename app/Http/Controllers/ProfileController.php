@@ -21,6 +21,13 @@ class ProfileController extends Controller
         ]);
     }
 
+    public function edit2(Request $request): View
+    {
+        return view('pengrajin.profile', [
+            'user' => $request->user(),
+        ]);
+    }
+
     /**
      * Update the user's profile information.
      */

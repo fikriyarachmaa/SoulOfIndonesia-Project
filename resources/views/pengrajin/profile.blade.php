@@ -33,14 +33,22 @@
             <div class="flex flex-col justify-start items-center">
             <div class="bg-white p-4 rounded-md shadow m-4 w-96">
             <p class="text-green-dark text-2xl font-semibold pb-1 text-left">Edit Profile</p>           
-            <form>
+            <form id="send-verification" method="post" action="{{ route('verification.send') }}">
+                @csrf
+            </form>
+             
+            <form method="post" action="{{ route('profile.update') }}" class="mt-6 space-y-6">
+                @csrf
+                @method('patch')
                 <div class="mb-2">
-                    <label for="nama" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Nama</label>
-                    <input type="nama" id="nama" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Jefri Nichol" required>
+                    <x-input-label for="name" :value="__('Name')" class="pt-2 block mb-2 text-sm font-medium text-gray-900 dark:text-white"/>
+                    <x-text-input id="name" name="name" type="text" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" :value="old('name', $user->name)" required autofocus autocomplete="name" />
+                    <x-input-error class="mt-2" :messages="$errors->get('name')" />
                 </div>
                 <div class="mb-2">
-                    <label for="email" class="block mb-2 text-sm font-medium text-green-dark">Email</label>
-                    <input type="email" id="email" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="jefrinichol@gmail.com" required>
+                    <x-input-label for="email" :value="__('Email')" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"/>
+                    <x-text-input id="email" name="email" type="email" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" :value="old('email', $user->email)" required autocomplete="username" />
+                    <x-input-error class="mt-2" :messages="$errors->get('email')" />
                 </div>
                     <button type="submit" class="mb-2 text-white bg-green-dark hover:bg-yellow focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full sm:w-auto px-5 py-2.5 text-center">Simpan</button>
             </form>
@@ -48,18 +56,23 @@
             <div class="bg-green-light h-px mt-2"></div>
             <!-- garis batas -->
             <p class="text-green-dark text-2xl font-semibold pb-1 pt-2 text-left">Password</p>           
-            <form>
+            <form method="post" action="{{ route('password.update') }}" class="mt-6 space-y-6">
+                @csrf
+                @method('put')
                 <div class="mb-2">
-                    <label for="passwordnow" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Password sekarang</label>
-                    <input type="passwordnow" id="passwordnow" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
+                    <x-input-label for="current_password" :value="__('Password Sekarang')" class="pt-2 block mb-2 text-sm font-medium text-gray-900 dark:text-white"/>
+                    <x-text-input id="current_password" name="current_password" type="password" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" autocomplete="current-password" />
+                    <x-input-error :messages="$errors->updatePassword->get('current_password')" class="mt-2" />
                 </div>
                 <div class="mb-2">
-                    <label for="passwordnew" class="block mb-2 text-sm font-medium text-green-dark">Password baru</label>
-                    <input type="passwordnew" id="passwordnew" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
+                    <x-input-label for="password" :value="__('Password Baru')" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"/>
+                    <x-text-input id="password" name="password" type="password" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" autocomplete="new-password" />
+                    <x-input-error :messages="$errors->updatePassword->get('password')" class="mt-2" />
                 </div>
                 <div class="mb-3">
-                <label for="confirmpass" class="block mb-2 text-sm font-medium text-green-dark">Konfirmasi password</label>
-                    <input type="confirmpass" id="passwordnew" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
+                    <x-input-label for="password_confirmation" :value="__('Konfirmasi Password')" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"/>
+                    <x-text-input id="password_confirmation" name="password_confirmation" type="password" class="bg-gray-50 w-full border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" autocomplete="new-password" />
+                    <x-input-error :messages="$errors->updatePassword->get('password_confirmation')" class="mt-2" />
                 </div>
                     <button type="submit" class="mb-2 text-white bg-green-dark hover:bg-yellow focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full sm:w-auto px-5 py-2.5 text-center">Ubah password</button>
             </form>
@@ -77,10 +90,9 @@
                     </div>
                 </div> 
                 <div class="mt-16 flex flex-col items-center">
-                    <h4 class="text-xl font-bold text-gray-600">Jefri Nichol</h4>
+                    <h4 class="text-xl font-bold text-gray-600">{{ auth()->user()->name }}</h4>
                     <p class="text-base font-normal text-gray-600">Pengrajin</p>
-                    <p class="text-base font-normal text-gray-600 pt-4">jefrinichol@gmail.com</p>
-                    <p class="text-base font-normal text-gray-600 pb-4">Laki-laki</p>
+                    <p class="text-base font-normal text-gray-600 pt-4">{{ auth()->user()->email }}</p>
                 </div> 
             </div>  
             </div>

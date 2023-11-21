@@ -149,13 +149,11 @@ Route::get('/rekom/wisataDetails', function () {
 /*rekom ROUTE*/
 
 /*PENGRAJIN ROUTE*/
-Route::get('/pengrajin/profile', function () {
-    return view('pengrajin/profile');
-});
-Route::get('/pengrajin/biodata', function () {
-    return view('pengrajin/biodata');
-});
-Route::get('/pengrajin/produk', function () {
+    Route::get('/pengrajin/profile', [ProfileController::class, 'edit2'])->name('pengrajin.profile.edit');
+    Route::patch('/pengrajin/profile', [ProfileController::class, 'update'])->name('pengrajin.profile.update');
+    Route::delete('/pengrajin/profile', [ProfileController::class, 'destroy'])->name('pengrajin.profile.destroy');
+    Route::get('/pengrajin/biodata', [PengrajinController::class, 'biodata'])->name('pengrajin.biodata');
+    Route::get('/pengrajin/produk', function () {
     return view('pengrajin/produk');
 });
 Route::get('/pengrajin/produk', [ProdukBatikController::class, 'create'])->name('pengrajin.produk.create');

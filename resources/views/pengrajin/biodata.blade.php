@@ -36,43 +36,26 @@
             <div class="flex flex-col justify-start items-center">
             <div class="bg-white p-4 rounded-md shadow m-4 w-3/4">
             <p class="text-black text-2xl font-semibold pb-1 text-center">Biodata</p>           
-            <form>
-                <div class="mb-2">
-                    <label for="nama" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Nama</label>
-                    <input type="nama" id="nama" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-pastel" placeholder="Jefri Nichol" required>
-                </div>
-                <div class="mb-2">
-                    <label for="email" class="block mb-2 text-sm font-medium text-green-dark">Email</label>
-                    <input type="email" id="email" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-pastel" placeholder="jefrinichol@gmail.com" required>
-                </div>
-                <div class="mb-3">
-                    <label for="gender" class="block mb-2 text-sm font-medium text-green-dark">Jenis Kelamin</label>
-                    <select class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-pastel" 
-                            value={selectedValue} onChange={handleSelectChange}>
-                        {genre.map((item, i) => (
-                            <option value={item} key={i}>
-                                Perempuan 
-                            </option>
-                            <option value={item} key={i}>
-                                Laki-Laki 
-                            </option>
-                        ))}
-                    </select>
-                </div>
-                <div class="mb-2">
-                    <label for="nama" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Nama Usaha</label>
-                    <input type="nama" id="nama" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light" placeholder="BatikOenik" required>
-                </div>
-                <div class="mb-2">
-                    <label for="kontak" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Kontak</label>
-                    <input type="kontak" id="kontak" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light" placeholder="0851-2345-6789" required>
-                </div>
-                <div class="mb-2">
-                    <label for="password" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Kata Sandi</label>
-                    <input type="password" id="password" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light" placeholder="**********" required>
-                </div>
-        
-            </form>
+            <div class="mb-2">
+            <label for="nama" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Nama</label>
+            <p id="nama" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-pastel">{{ auth()->user()->name }}</p>
+        </div>
+        <div class="mb-2">
+            <label for="email" class="block mb-2 text-sm font-medium text-green-dark">Email</label>
+            <p id="email" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-pastel">{{ auth()->user()->email }}</p>
+        </div>
+        <div class="mb-2">
+            <label for="nama_usaha" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Nama Usaha</label>
+            <p id="nama_usaha" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light">{{ auth()->user()->nama_usaha }}</p>
+        </div>
+        <div class="mb-2">
+            <label for="kontak" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Kontak</label>
+            <p id="kontak" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light">{{ auth()->user()->nomor_kontak }}</p>
+        </div>
+        <div class="mb-2">
+            <label for="alamat_bisnis" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Alamat Bisnis</label>
+            <p id="alamat_bisnis" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light">{{ auth()->user()->alamat_bisnis }}</p>
+        </div>
             <div class="text-center pt-4">
                 <a href="/pengrajin/profile" class="text-base font-semibold text-white bg-yellow py-1 px-6 rounded-lg hover:bg-green-darkest hover:text-green-pastel transition duration-300 ease-in-out">Edit</a>
             </div>
