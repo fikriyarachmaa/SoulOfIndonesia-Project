@@ -14,4 +14,13 @@ class PengrajinController extends Controller
 
         return view('pengrajin.pengrajin', compact('countApproved', 'countPending'));
     }
+
+    public function biodata(Request $request)
+    {
+        return view('pengrajin.biodata', [
+            'user' => $request->user(),
+        ]);
+
+    }
+
 }

@@ -29,9 +29,9 @@ Route::get('/dashboard', function () {
 Route::middleware('auth')->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
     Route::get('/pengrajin/dashboard', [PengrajinController::class, 'dashboard'])->name('pengrajin.dashboard');
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/admin/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/admin/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/admin/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
 Route::get('/', function () {
@@ -102,9 +102,6 @@ Route::get('/auth/regis', function () {
 
 
 /*ADMIN ROUTE*/
-Route::get('/admin/profile', function () {
-    return view('admin/profile');
-});
 Route::get('/admin/artikel', function () {
     return view('admin/artikel');
 });
@@ -154,13 +151,11 @@ Route::get('/rekom/wisataDetails', function () {
 /*rekom ROUTE*/
 
 /*PENGRAJIN ROUTE*/
-Route::get('/pengrajin/profile', function () {
-    return view('pengrajin/profile');
-});
-Route::get('/pengrajin/biodata', function () {
-    return view('pengrajin/biodata');
-});
-Route::get('/pengrajin/produk', function () {
+    Route::get('/pengrajin/profile', [ProfileController::class, 'edit2'])->name('pengrajin.profile.edit');
+    Route::patch('/pengrajin/profile', [ProfileController::class, 'update'])->name('pengrajin.profile.update');
+    Route::delete('/pengrajin/profile', [ProfileController::class, 'destroy'])->name('pengrajin.profile.destroy');
+    Route::get('/pengrajin/biodata', [PengrajinController::class, 'biodata'])->name('pengrajin.biodata');
+    Route::get('/pengrajin/produk', function () {
     return view('pengrajin/produk');
 });
 Route::get('/pengrajin/produk', [ProdukBatikController::class, 'create'])->name('pengrajin.produk.create');
