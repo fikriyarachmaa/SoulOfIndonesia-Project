@@ -38,28 +38,27 @@
             <p class="text-black text-2xl font-semibold pb-1 text-center">Biodata</p>           
             <div class="mb-2">
             <label for="nama" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Nama</label>
-            <p id="nama" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-pastel">{{ auth()->user()->name }}</p>
+            <p id="nama" class="bg-cream border text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-pastel">{{ auth()->user()->name }}</p>
         </div>
         <div class="mb-2">
             <label for="email" class="block mb-2 text-sm font-medium text-green-dark">Email</label>
-            <p id="email" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-pastel">{{ auth()->user()->email }}</p>
+            <p id="email" class="bg-cream border text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-pastel">{{ auth()->user()->email }}</p>
         </div>
         <div class="mb-2">
             <label for="nama_usaha" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Nama Usaha</label>
-            <p id="nama_usaha" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light">{{ auth()->user()->nama_usaha }}</p>
+            <p id="nama_usaha" class="bg-cream border text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light">{{ auth()->user()->nama_usaha }}</p>
         </div>
         <div class="mb-2">
             <label for="kontak" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Kontak</label>
-            <p id="kontak" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light">{{ auth()->user()->nomor_kontak }}</p>
+            <p id="kontak" class="bg-cream border text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light">{{ auth()->user()->nomor_kontak }}</p>
         </div>
         <div class="mb-2">
             <label for="alamat_bisnis" class="pt-2 block mb-2 text-sm font-medium text-green-dark">Alamat Bisnis</label>
-            <p id="alamat_bisnis" class="bg-cream w-full border border-gray-300 text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light">{{ auth()->user()->alamat_bisnis }}</p>
+            <p id="alamat_bisnis" class="bg-cream border text-green-dark text-sm rounded-md block w-full p-2.5 border-yellow dark:placeholder-green-light">{{ auth()->user()->alamat_bisnis }}</p>
         </div>
             <div class="text-center pt-4">
                 <a href="/pengrajin/profile" class="text-base font-semibold text-white bg-yellow py-1 px-6 rounded-lg hover:bg-green-darkest hover:text-green-pastel transition duration-300 ease-in-out">Edit</a>
             </div>
-
         </div>
         <!-- main end -->
     </div>

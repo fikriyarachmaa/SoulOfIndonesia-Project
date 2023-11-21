@@ -25,7 +25,7 @@
             <form class="bg-green-pastel rounded-md shadow-2xl p-5" method="POST" action="{{ route('login') }}">
             @csrf
               <h1 class="text-green-dark font-bold text-2xl mb-1 text-center">Selamat Datang!!</h1>
-              <p class="text-green-dark text-sm font-normal text-gray-600 mb-8 text-center">Silahkan Masuk</p>
+              <p class="text-green-dark text-sm font-normal mb-8 text-center">Silahkan Masuk</p>
               <!-- Email -->
               <div class="relative w-full mb-3">
             <x-input-label class=" text-green-dark text-medium font-bold mb-2" for="email" :value="__('Alamat Email :')" />

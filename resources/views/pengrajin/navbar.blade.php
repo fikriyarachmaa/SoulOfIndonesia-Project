@@ -15,11 +15,6 @@
                 <a href="/landingpage"><h2 class="font-semibold text-xl">Soul of Indonesia</h2></a>
             </div>
         </div>
-            <div class="px-5 space-x-5">
-                <button>
-                    <i class="fas fa-user text-gray-500 text-lg"></i>
-                </button>
-            </div>
         </div>
     <!-- navbar end-->
 
