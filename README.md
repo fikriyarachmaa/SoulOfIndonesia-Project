@@ -3,7 +3,7 @@
 
 ## About Soul of Indonesia
 Soul of Indonesia adalah sebuah platform berbasis website untuk memperkenalkan dan mempromosikan seni 
-serta budaya batik Indonesia.
+serta budaya batik Indonesia. Pengembangan menggunakan framework laravel dan tailwind css 
 
 <!--
 ## Learning Laravel
